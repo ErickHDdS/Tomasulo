@@ -1,0 +1,20 @@
+Fitter Status : Successful - Tue Aug 10 23:28:26 2021
+Quartus II 64-Bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition
+Revision Name : parte3
+Top-level Entity Name : parte3
+Family : Cyclone IV GX
+Device : EP4CGX75DF27C6
+Timing Models : Final
+Total logic elements : 164 / 73,920 ( < 1 % )
+    Total combinational functions : 163 / 73,920 ( < 1 % )
+    Dedicated logic registers : 54 / 73,920 ( < 1 % )
+Total registers : 54
+Total pins : 19 / 343 ( 6 % )
+Total virtual pins : 0
+Total memory bits : 0 / 4,257,792 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 396 ( 0 % )
+Total GXB Receiver Channel PCS : 0 / 8 ( 0 % )
+Total GXB Receiver Channel PMA : 0 / 8 ( 0 % )
+Total GXB Transmitter Channel PCS : 0 / 8 ( 0 % )
+Total GXB Transmitter Channel PMA : 0 / 8 ( 0 % )
+Total PLLs : 0 / 8 ( 0 % )

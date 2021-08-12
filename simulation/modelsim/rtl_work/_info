@@ -1,0 +1,46 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\Usuário\Documents\GitHub\Tomasulo\simulation\modelsim
+vparte3
+INLS?Z@=M]T38jkKOYhk_P0
+VGj^N1klC`b:eibRNIN1a22
+Z1 dC:\Users\Usuário\Documents\GitHub\Tomasulo\simulation\modelsim
+w1628648788
+8C:/Users/Usuário/Documents/GitHub/Tomasulo/parte3.v
+FC:/Users/Usuário/Documents/GitHub/Tomasulo/parte3.v
+L0 1
+Z2 OV;L;10.1d;51
+r1
+31
+Z3 o-vlog01compat -work work -O0
+!i10b 1
+!s100 Og:ge4DYagJPLPf22GYbk3
+!s85 0
+!s108 1628697354.630000
+!s107 C:/Users/Usuário/Documents/GitHub/Tomasulo/parte3.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Usuário/Documents/GitHub/Tomasulo|C:/Users/Usuário/Documents/GitHub/Tomasulo/parte3.v|
+!s101 -O0
+Z4 !s92 -vlog01compat -work work +incdir+C:/Users/Usuário/Documents/GitHub/Tomasulo -O0
+vTomasulo
+!i10b 1
+!s100 HfR;7Y33bhC4HX7h[h=lW1
+IiB6]Lh3ini2O3NgOFh7]R2
+VY6]^_5kWV>cDF5dL6B^PX1
+R1
+w1628697250
+8C:/Users/Usuário/Documents/GitHub/Tomasulo/Tomasulo.v
+FC:/Users/Usuário/Documents/GitHub/Tomasulo/Tomasulo.v
+L0 1
+R2
+r1
+!s85 0
+31
+!s108 1628697354.900000
+!s107 C:/Users/Usuário/Documents/GitHub/Tomasulo/Tomasulo.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Usuário/Documents/GitHub/Tomasulo|C:/Users/Usuário/Documents/GitHub/Tomasulo/Tomasulo.v|
+!s101 -O0
+R3
+R4
+n@tomasulo

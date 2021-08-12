@@ -1,0 +1,86 @@
+# Reading C:/altera/13.0sp1/modelsim_ase/tcl/vsim/pref.tcl 
+# do parte3_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/Usuário/Documents/GitHub/Tomasulo {C:/Users/Usuário/Documents/GitHub/Tomasulo/parte3.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module parte3
+# 
+# Top level modules:
+# 	parte3
+# vlog -vlog01compat -work work +incdir+C:/Users/Usuário/Documents/GitHub/Tomasulo {C:/Users/Usuário/Documents/GitHub/Tomasulo/Tomasulo.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Tomasulo
+# 
+# Top level modules:
+# 	Tomasulo
+# 
+vsim +altera -do parte3_run_msim_rtl_verilog.do -l msim_transcript -gui work.parte3
+# vsim +altera -do parte3_run_msim_rtl_verilog.do -l msim_transcript -gui work.parte3 
+# Loading work.parte3
+# Loading work.Tomasulo
+# do parte3_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/Usuário/Documents/GitHub/Tomasulo {C:/Users/Usuário/Documents/GitHub/Tomasulo/parte3.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module parte3
+# 
+# Top level modules:
+# 	parte3
+# vlog -vlog01compat -work work +incdir+C:/Users/Usuário/Documents/GitHub/Tomasulo {C:/Users/Usuário/Documents/GitHub/Tomasulo/Tomasulo.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Tomasulo
+# 
+# Top level modules:
+# 	Tomasulo
+# 
+wave create -driver freeze -pattern clock -initialvalue HiZ -period 100ps -dutycycle 50 -starttime 0ps -endtime 100000ps sim:/parte3/clock
+wave create -driver freeze -pattern constant -value 1 -starttime 0ps -endtime 100000ps sim:/parte3/enable
+add wave -position end  sim:/parte3/regValue
+run -all
+# Break key hit 
+quit -sim
+vsim +altera -do parte3_run_msim_rtl_verilog.do -l msim_transcript -gui work.Tomasulo
+# vsim +altera -do parte3_run_msim_rtl_verilog.do -l msim_transcript -gui work.Tomasulo 
+# Loading work.Tomasulo
+# do parte3_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/Usuário/Documents/GitHub/Tomasulo {C:/Users/Usuário/Documents/GitHub/Tomasulo/parte3.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module parte3
+# 
+# Top level modules:
+# 	parte3
+# vlog -vlog01compat -work work +incdir+C:/Users/Usuário/Documents/GitHub/Tomasulo {C:/Users/Usuário/Documents/GitHub/Tomasulo/Tomasulo.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Tomasulo
+# 
+# Top level modules:
+# 	Tomasulo
+# 
+wave create -driver freeze -pattern clock -initialvalue HiZ -period 100ps -dutycycle 50 -starttime 0ps -endtime 100000ps sim:/Tomasulo/Clock
+wave create -driver freeze -pattern constant -value 1 -starttime 0ps -endtime 100000ps sim:/Tomasulo/enable
+add wave -position end  sim:/Tomasulo/instrucao
+add wave -position end  sim:/Tomasulo/bancoReg
+add wave -position end  sim:/Tomasulo/regValue
+run -all
