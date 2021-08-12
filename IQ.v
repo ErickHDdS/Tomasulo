@@ -1,16 +1,13 @@
-module IQ(Clock, Reset, Run, enableOut, instructionOut, done, disponivel);
+module IQ(Clock, enableOut, instructionOut, done, disponivel);
   
-  input Clock, Reset, Run, done, disponivel;
-  reg Adderin, Adderin2, LDin, SDin, LDin2, SDin2;
+  input Clock, done, disponivel;
   reg [15:0]PC1[63:0]; //Armazena a lista de isntrucoes
-  reg [15:0]cr;
   
   reg[15:0] i;
 
   output reg enableOut;
   output reg[15:0]instructionOut;
-  
-  wire [15:0] R0, R1, R2, R3, R4, R5, R6;
+ 
   
   initial
 	begin //Fila de Instrucoes
@@ -27,15 +24,11 @@ module IQ(Clock, Reset, Run, enableOut, instructionOut, done, disponivel);
 	
 	always @ (posedge Clock)
 	begin
-	  if (Reset == 1'b0 && Run == 1'b1)
-	  begin
 	  	if(disponivel == 1'b1)
 		begin
 			instructionOut = PC1[i];
 			enableOut = 1;
 			i = i + 1;
-			
-		end
 	  end
 	end
 	

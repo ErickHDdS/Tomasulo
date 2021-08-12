@@ -4,10 +4,10 @@ K3
 cModel Technology
 Z0 dC:\Users\Usuário\Downloads\Tomasulo\Tomasulo\TOMASULO - PRATICA 3\simulation\modelsim
 vCDB
-I`VSY=^K?9TbQY_9ommWP42
-V5G1VJUK0;9Lk91zXK4VkY3
+ImDHGWzni4V_m7QmcF0:Y?1
+VMhbn?[za=@P4zAlg<7k?d3
 Z1 dC:\Users\Usuário\Downloads\Tomasulo\Tomasulo\TOMASULO - PRATICA 3\simulation\modelsim
-w1628737549
+w1628739695
 8C:/Users/Usuário/Downloads/Tomasulo/Tomasulo/TOMASULO - PRATICA 3/CDB.v
 FC:/Users/Usuário/Downloads/Tomasulo/Tomasulo/TOMASULO - PRATICA 3/CDB.v
 L0 1
@@ -18,9 +18,9 @@ Z3 o-vlog01compat -work work -O0
 n@c@d@b
 Z4 !s92 -vlog01compat -work work {+incdir+C:/Users/Usuário/Downloads/Tomasulo/Tomasulo/TOMASULO - PRATICA 3} -O0
 !i10b 1
-!s100 :mQb8bF?3Dn671Z5[Y;`O2
+!s100 j10TIFWk`AUIUc:MBmDD^1
 !s85 0
-!s108 1628737802.956000
+!s108 1628739989.456000
 !s107 C:/Users/Usuário/Downloads/Tomasulo/Tomasulo/TOMASULO - PRATICA 3/CDB.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Usuário/Downloads/Tomasulo/Tomasulo/TOMASULO - PRATICA 3|C:/Users/Usuário/Downloads/Tomasulo/Tomasulo/TOMASULO - PRATICA 3/CDB.v|
 !s101 -O0
@@ -41,15 +41,15 @@ n@f@pregisters
 !i10b 1
 !s100 l:QVEGlgi]K`W19lflNT:0
 !s85 0
-!s108 1628737803.167000
+!s108 1628739989.692000
 !s107 C:/Users/Usuário/Downloads/Tomasulo/Tomasulo/TOMASULO - PRATICA 3/FPregisters.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Usuário/Downloads/Tomasulo/Tomasulo/TOMASULO - PRATICA 3|C:/Users/Usuário/Downloads/Tomasulo/Tomasulo/TOMASULO - PRATICA 3/FPregisters.v|
 !s101 -O0
 vIQ
-I]@G`e7G;f7HBF77GB_CZ40
-Vc7X<[i_4=e[8l2EnC>VOD1
+I`Yh8Qb?V7Sc6lcFPCTHd91
+VmzTHRDYS91<dKd@ofBYY42
 R1
-w1628737550
+w1628739737
 8C:/Users/Usuário/Downloads/Tomasulo/Tomasulo/TOMASULO - PRATICA 3/IQ.v
 FC:/Users/Usuário/Downloads/Tomasulo/Tomasulo/TOMASULO - PRATICA 3/IQ.v
 L0 1
@@ -60,9 +60,9 @@ R3
 R4
 n@i@q
 !i10b 1
-!s100 Uckk43lhi:GXJ4WGkIBP^2
+!s100 J9@ha61`=5_fA6PQoVBjA3
 !s85 0
-!s108 1628737803.382000
+!s108 1628739989.910000
 !s107 C:/Users/Usuário/Downloads/Tomasulo/Tomasulo/TOMASULO - PRATICA 3/IQ.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Usuário/Downloads/Tomasulo/Tomasulo/TOMASULO - PRATICA 3|C:/Users/Usuário/Downloads/Tomasulo/Tomasulo/TOMASULO - PRATICA 3/IQ.v|
 !s101 -O0
@@ -82,17 +82,17 @@ R4
 !i10b 1
 !s100 JS@M8NihnH@ScVbZzQ``f3
 !s85 0
-!s108 1628737804.107000
+!s108 1628739990.644000
 !s107 C:/Users/Usuário/Downloads/Tomasulo/Tomasulo/TOMASULO - PRATICA 3/mux.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Usuário/Downloads/Tomasulo/Tomasulo/TOMASULO - PRATICA 3|C:/Users/Usuário/Downloads/Tomasulo/Tomasulo/TOMASULO - PRATICA 3/mux.v|
 !s101 -O0
 vpratica3
 !i10b 1
-!s100 zi^A@RA^be?oHMX`8fS0W1
-I1e?o6mP7BG2X4I`6_=GjT0
-VEz8S;PzoabJZ72mE>D=RI0
+!s100 nz:D^Y5LmPI7QHbPKAkbb0
+IM^DG40?5M44FP=3;ZFI^U1
+VXbhND@lo3DgGZ^8njQmbc3
 R1
-w1628643024
+w1628739709
 8C:/Users/Usuário/Downloads/Tomasulo/Tomasulo/TOMASULO - PRATICA 3/pratica3.v
 FC:/Users/Usuário/Downloads/Tomasulo/Tomasulo/TOMASULO - PRATICA 3/pratica3.v
 L0 1
@@ -100,7 +100,7 @@ R2
 r1
 !s85 0
 31
-!s108 1628737804.354000
+!s108 1628739990.938000
 !s107 C:/Users/Usuário/Downloads/Tomasulo/Tomasulo/TOMASULO - PRATICA 3/pratica3.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Usuário/Downloads/Tomasulo/Tomasulo/TOMASULO - PRATICA 3|C:/Users/Usuário/Downloads/Tomasulo/Tomasulo/TOMASULO - PRATICA 3/pratica3.v|
 !s101 -O0
@@ -110,7 +110,7 @@ vRSadders
 II0ij?dgn3@bbE38J?oAOR2
 V]<2VGAn`1FAWi^D3<Ylio2
 R1
-w1628737770
+w1628739711
 8C:/Users/Usuário/Downloads/Tomasulo/Tomasulo/TOMASULO - PRATICA 3/RSadders.v
 FC:/Users/Usuário/Downloads/Tomasulo/Tomasulo/TOMASULO - PRATICA 3/RSadders.v
 L0 1
@@ -123,15 +123,15 @@ n@r@sadders
 !i10b 1
 !s100 >j0@eLY]e]_bK8=>KD[5Z0
 !s85 0
-!s108 1628737803.581000
+!s108 1628739990.166000
 !s107 C:/Users/Usuário/Downloads/Tomasulo/Tomasulo/TOMASULO - PRATICA 3/RSadders.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Usuário/Downloads/Tomasulo/Tomasulo/TOMASULO - PRATICA 3|C:/Users/Usuário/Downloads/Tomasulo/Tomasulo/TOMASULO - PRATICA 3/RSadders.v|
 !s101 -O0
 vUnidadeFuncional
-I[`c@8hB8f6Mg00CigM44C0
+I>[RH6f[eIhA[86OL=aKci0
 VafMTV`NEK@JflXdZnKV]F2
 R1
-w1628737322
+w1628739965
 8C:/Users/Usuário/Downloads/Tomasulo/Tomasulo/TOMASULO - PRATICA 3/UnidadeFuncional.v
 FC:/Users/Usuário/Downloads/Tomasulo/Tomasulo/TOMASULO - PRATICA 3/UnidadeFuncional.v
 L0 1
@@ -142,9 +142,9 @@ R3
 R4
 n@unidade@funcional
 !i10b 1
-!s100 QS4]Cj_Hh6ECNO]^>Zmgb1
+!s100 6=zaLcWAVNd8zDI6HWLo_1
 !s85 0
-!s108 1628737803.784000
+!s108 1628739990.443000
 !s107 C:/Users/Usuário/Downloads/Tomasulo/Tomasulo/TOMASULO - PRATICA 3/UnidadeFuncional.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Usuário/Downloads/Tomasulo/Tomasulo/TOMASULO - PRATICA 3|C:/Users/Usuário/Downloads/Tomasulo/Tomasulo/TOMASULO - PRATICA 3/UnidadeFuncional.v|
 !s101 -O0

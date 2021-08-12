@@ -29,7 +29,7 @@ begin
 		instructionCodeOut = instructionCodeIn;
 		case(instruction[3:0])
 		4'b0000: dout <= reg2 + reg1;
-		4'b0001: dout <= reg1 - reg2;
+		4'b0001: dout <= reg2 - reg1;
 		4'b0100: dout <= reg2 * reg1;
 		//complete
 		endcase

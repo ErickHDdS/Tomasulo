@@ -63,22 +63,13 @@ vsim work.pratica3
 # Loading work.RSadders
 # Loading work.UnidadeFuncional
 wave create -driver freeze -pattern clock -initialvalue HiZ -period 100ps -dutycycle 50 -starttime 0ps -endtime 100000ps sim:/pratica3/clock
-wave create -driver freeze -pattern constant -value 1 -starttime 0ps -endtime 100000ps sim:/pratica3/Run
-wave create -driver freeze -pattern constant -value 0 -starttime 0ps -endtime 100000ps sim:/pratica3/Reset
-add wave -position end  sim:/pratica3/cdb/R1
-add wave -position end  sim:/pratica3/cdb/R2
-add wave -position end  sim:/pratica3/cdb/R3
-add wave -position end  sim:/pratica3/cdb/R4
-add wave -position end  sim:/pratica3/cdb/R5
-add wave -position end  sim:/pratica3/cdb/R6
-add wave -position end  sim:/pratica3/cdb/R7
-add wave -position end  sim:/pratica3/cdb/nextInstruction
-add wave -position end  sim:/pratica3/cdb/nextInstructionEnable
-add wave -position end  sim:/pratica3/cdb/currentInst
+add wave -position end  sim:/pratica3/cdb/RSa1/R1
+add wave -position end  sim:/pratica3/cdb/RSa1/R2
+add wave -position end  sim:/pratica3/cdb/RSa1/R3
+add wave -position end  sim:/pratica3/cdb/RSa1/R4
+add wave -position end  sim:/pratica3/cdb/RSa1/R5
+add wave -position end  sim:/pratica3/cdb/RSa1/R6
+add wave -position end  sim:/pratica3/cdb/dataCDBin
 run -all
-write format wave -window .main_pane.wave.interior.cs.body.pw.wf {C:/Users/Usuário/Downloads/Tomasulo/Tomasulo/TOMASULO - PRATICA 3/simulation/modelsim/wave.do}
-# save: cannot open file "C:/Users/Usuário/Downloads/Tomasulo/Tomasulo/TOMASULO - PRATICA 3/simulation/modelsim/wave.do": no such file or directory
-wave editwrite -file {C:/Users/Usuário/Downloads/Tomasulo/Tomasulo/TOMASULO - PRATICA 3/simulation/modelsim/wave.do} -append
-# Cannot open file
 wave editwrite -file {C:/Users/Usuário/Downloads/Tomasulo/Tomasulo/TOMASULO - PRATICA 3/simulation/modelsim/wave.do}
 # Cannot open file

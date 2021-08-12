@@ -1,5 +1,5 @@
-module pratica3(clock, Reset, Run);
- input clock, Reset, Run;
+module pratica3(clock);
+ input clock;
  
- CDB cdb (clock, Reset, Run);
+ CDB cdb (clock);
  endmodule

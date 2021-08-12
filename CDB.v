@@ -1,4 +1,4 @@
-module CDB (clock, Reset, Run);
+module CDB (clock);
   
   /*
   * Tomsulo com instrucao de desvio e despache simples das instrucoes
@@ -16,7 +16,6 @@ module CDB (clock, Reset, Run);
 
 
   input clock;
-  input Reset, Run;
   
   wire [15:0]R1, R2, R3, R4, R5, R6, R7, dataCDBout, nextInstruction, instOut, currentInst, Rout;
   wire nextInstructionEnable, done, disponivel;
@@ -38,7 +37,7 @@ module CDB (clock, Reset, Run);
   
   FPregisters fpreg(clock, dataCDBin, dataAddress, writeEnable, R1, R2, R3, R4, R5, R6, R7); //registradores propriamente ditos
   
-  IQ queue(clock, Reset, Run, nextInstructionEnable, nextInstruction, done, disponivel); //fila de instrucoes
+  IQ queue(clock, nextInstructionEnable, nextInstruction, done, disponivel); //fila de instrucoes
   
   RSadders RSa1(nextInstruction, clock, nextInstructionEnable, R1, R2, R3, R4, R5, R6, R7,instOutEnable, currentInst, done, dataCDBout, disponivel, instOut); //estacao de reserva
 

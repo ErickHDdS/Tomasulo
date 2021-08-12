@@ -77,7 +77,7 @@ module RSadders(instruction, Clock, Adderin, R1, R2, R3, R4, R5, R6, R7, instOut
 	    Busy[i]=1;
       	    OP[i][15:0] = instruction[15:0]; //guarda a instrucao inteira
        	    if(OP[i][3:0]==4'b0000 || OP[i][3:0]==4'b0001 || OP[i][3:0]==4'b0100)
-	    begin //add e sub
+	    begin //add, sub e mul
 	    	Qj[i] = registerStatus[instruction[9:7]]; //guarda a dependencia de Ry
 	    	Qk[i] = registerStatus[instruction[6:4]]; //guarda a dependencia de Rx
 	    	registerStatus[instruction[12:10]] = i; //Rz passa a depender da nova instrucao
