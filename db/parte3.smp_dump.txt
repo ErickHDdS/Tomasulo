@@ -1,5 +1,0 @@
-
-State Machine - |parte3|Tomasulo:tomasulo|SumOp
-Name SumOp.01 
-SumOp.00 0 
-SumOp.01 1 

@@ -1,5 +1,5 @@
 # Reading C:/altera/13.0sp1/modelsim_ase/tcl/vsim/pref.tcl 
-# do parte3_run_msim_rtl_verilog.do 
+# do pratica3_run_msim_rtl_verilog.do 
 # if {[file exists rtl_work]} {
 # 	vdel -lib rtl_work -all
 # }
@@ -10,77 +10,75 @@
 # ** Warning: Copied C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
 #          Updated modelsim.ini.
 # 
-# vlog -vlog01compat -work work +incdir+C:/Users/Usuário/Documents/GitHub/Tomasulo {C:/Users/Usuário/Documents/GitHub/Tomasulo/parte3.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/Usuário/Downloads/Tomasulo/Tomasulo/TOMASULO\ -\ PRATICA\ 3 {C:/Users/Usuário/Downloads/Tomasulo/Tomasulo/TOMASULO - PRATICA 3/CDB.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module parte3
+# -- Compiling module CDB
 # 
 # Top level modules:
-# 	parte3
-# vlog -vlog01compat -work work +incdir+C:/Users/Usuário/Documents/GitHub/Tomasulo {C:/Users/Usuário/Documents/GitHub/Tomasulo/Tomasulo.v}
+# 	CDB
+# vlog -vlog01compat -work work +incdir+C:/Users/Usuário/Downloads/Tomasulo/Tomasulo/TOMASULO\ -\ PRATICA\ 3 {C:/Users/Usuário/Downloads/Tomasulo/Tomasulo/TOMASULO - PRATICA 3/FPregisters.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module Tomasulo
+# -- Compiling module FPregisters
 # 
 # Top level modules:
-# 	Tomasulo
-# 
-vsim +altera -do parte3_run_msim_rtl_verilog.do -l msim_transcript -gui work.parte3
-# vsim +altera -do parte3_run_msim_rtl_verilog.do -l msim_transcript -gui work.parte3 
-# Loading work.parte3
-# Loading work.Tomasulo
-# do parte3_run_msim_rtl_verilog.do 
-# if {[file exists rtl_work]} {
-# 	vdel -lib rtl_work -all
-# }
-# vlib rtl_work
-# vmap work rtl_work
-# Modifying modelsim.ini
-# 
-# vlog -vlog01compat -work work +incdir+C:/Users/Usuário/Documents/GitHub/Tomasulo {C:/Users/Usuário/Documents/GitHub/Tomasulo/parte3.v}
+# 	FPregisters
+# vlog -vlog01compat -work work +incdir+C:/Users/Usuário/Downloads/Tomasulo/Tomasulo/TOMASULO\ -\ PRATICA\ 3 {C:/Users/Usuário/Downloads/Tomasulo/Tomasulo/TOMASULO - PRATICA 3/IQ.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module parte3
+# -- Compiling module IQ
 # 
 # Top level modules:
-# 	parte3
-# vlog -vlog01compat -work work +incdir+C:/Users/Usuário/Documents/GitHub/Tomasulo {C:/Users/Usuário/Documents/GitHub/Tomasulo/Tomasulo.v}
+# 	IQ
+# vlog -vlog01compat -work work +incdir+C:/Users/Usuário/Downloads/Tomasulo/Tomasulo/TOMASULO\ -\ PRATICA\ 3 {C:/Users/Usuário/Downloads/Tomasulo/Tomasulo/TOMASULO - PRATICA 3/RSadders.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module Tomasulo
+# -- Compiling module RSadders
 # 
 # Top level modules:
-# 	Tomasulo
+# 	RSadders
+# vlog -vlog01compat -work work +incdir+C:/Users/Usuário/Downloads/Tomasulo/Tomasulo/TOMASULO\ -\ PRATICA\ 3 {C:/Users/Usuário/Downloads/Tomasulo/Tomasulo/TOMASULO - PRATICA 3/UnidadeFuncional.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module UnidadeFuncional
 # 
-wave create -driver freeze -pattern clock -initialvalue HiZ -period 100ps -dutycycle 50 -starttime 0ps -endtime 100000ps sim:/parte3/clock
-wave create -driver freeze -pattern constant -value 1 -starttime 0ps -endtime 100000ps sim:/parte3/enable
-add wave -position end  sim:/parte3/regValue
+# Top level modules:
+# 	UnidadeFuncional
+# vlog -vlog01compat -work work +incdir+C:/Users/Usuário/Downloads/Tomasulo/Tomasulo/TOMASULO\ -\ PRATICA\ 3 {C:/Users/Usuário/Downloads/Tomasulo/Tomasulo/TOMASULO - PRATICA 3/mux.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mux
+# 
+# Top level modules:
+# 	mux
+# vlog -vlog01compat -work work +incdir+C:/Users/Usuário/Downloads/Tomasulo/Tomasulo/TOMASULO\ -\ PRATICA\ 3 {C:/Users/Usuário/Downloads/Tomasulo/Tomasulo/TOMASULO - PRATICA 3/pratica3.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module pratica3
+# 
+# Top level modules:
+# 	pratica3
+# 
+vsim work.pratica3
+# vsim work.pratica3 
+# Loading work.pratica3
+# Loading work.CDB
+# Loading work.mux
+# Loading work.FPregisters
+# Loading work.IQ
+# Loading work.RSadders
+# Loading work.UnidadeFuncional
+wave create -driver freeze -pattern clock -initialvalue HiZ -period 100ps -dutycycle 50 -starttime 0ps -endtime 100000ps sim:/pratica3/clock
+wave create -driver freeze -pattern constant -value 1 -starttime 0ps -endtime 100000ps sim:/pratica3/Run
+wave create -driver freeze -pattern constant -value 0 -starttime 0ps -endtime 100000ps sim:/pratica3/Reset
+add wave -position end  sim:/pratica3/cdb/R1
+add wave -position end  sim:/pratica3/cdb/R2
+add wave -position end  sim:/pratica3/cdb/R3
+add wave -position end  sim:/pratica3/cdb/R4
+add wave -position end  sim:/pratica3/cdb/R5
+add wave -position end  sim:/pratica3/cdb/R6
+add wave -position end  sim:/pratica3/cdb/R7
+add wave -position end  sim:/pratica3/cdb/nextInstruction
+add wave -position end  sim:/pratica3/cdb/nextInstructionEnable
+add wave -position end  sim:/pratica3/cdb/currentInst
 run -all
-# Break key hit 
-quit -sim
-vsim +altera -do parte3_run_msim_rtl_verilog.do -l msim_transcript -gui work.Tomasulo
-# vsim +altera -do parte3_run_msim_rtl_verilog.do -l msim_transcript -gui work.Tomasulo 
-# Loading work.Tomasulo
-# do parte3_run_msim_rtl_verilog.do 
-# if {[file exists rtl_work]} {
-# 	vdel -lib rtl_work -all
-# }
-# vlib rtl_work
-# vmap work rtl_work
-# Modifying modelsim.ini
-# 
-# vlog -vlog01compat -work work +incdir+C:/Users/Usuário/Documents/GitHub/Tomasulo {C:/Users/Usuário/Documents/GitHub/Tomasulo/parte3.v}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module parte3
-# 
-# Top level modules:
-# 	parte3
-# vlog -vlog01compat -work work +incdir+C:/Users/Usuário/Documents/GitHub/Tomasulo {C:/Users/Usuário/Documents/GitHub/Tomasulo/Tomasulo.v}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module Tomasulo
-# 
-# Top level modules:
-# 	Tomasulo
-# 
-wave create -driver freeze -pattern clock -initialvalue HiZ -period 100ps -dutycycle 50 -starttime 0ps -endtime 100000ps sim:/Tomasulo/Clock
-wave create -driver freeze -pattern constant -value 1 -starttime 0ps -endtime 100000ps sim:/Tomasulo/enable
-add wave -position end  sim:/Tomasulo/instrucao
-add wave -position end  sim:/Tomasulo/bancoReg
-add wave -position end  sim:/Tomasulo/regValue
-run -all
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf {C:/Users/Usuário/Downloads/Tomasulo/Tomasulo/TOMASULO - PRATICA 3/simulation/modelsim/wave.do}
+# save: cannot open file "C:/Users/Usuário/Downloads/Tomasulo/Tomasulo/TOMASULO - PRATICA 3/simulation/modelsim/wave.do": no such file or directory
+wave editwrite -file {C:/Users/Usuário/Downloads/Tomasulo/Tomasulo/TOMASULO - PRATICA 3/simulation/modelsim/wave.do} -append
+# Cannot open file
+wave editwrite -file {C:/Users/Usuário/Downloads/Tomasulo/Tomasulo/TOMASULO - PRATICA 3/simulation/modelsim/wave.do}
+# Cannot open file
