@@ -1,5 +1,5 @@
 Analysis & Synthesis report for pratica3
-Fri Aug 13 15:39:25 2021
+Fri Aug 13 16:00:35 2021
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -44,7 +44,7 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Aug 13 15:39:25 2021           ;
+; Analysis & Synthesis Status        ; Successful - Fri Aug 13 16:00:35 2021           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; pratica3                                        ;
 ; Top-level Entity Name              ; pratica3                                        ;
@@ -258,7 +258,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Fri Aug 13 15:39:25 2021
+    Info: Processing started: Fri Aug 13 16:00:34 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off pratica3 -c pratica3
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file cdb.v
@@ -328,8 +328,8 @@ Info (21057): Implemented 1 device resources after synthesis - the final resourc
     Info (21059): Implemented 0 output pins
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 26 warnings
     Info: Peak virtual memory: 4594 megabytes
-    Info: Processing ended: Fri Aug 13 15:39:25 2021
-    Info: Elapsed time: 00:00:00
+    Info: Processing ended: Fri Aug 13 16:00:35 2021
+    Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
 
