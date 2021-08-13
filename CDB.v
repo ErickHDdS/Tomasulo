@@ -1,20 +1,5 @@
 module CDB (clock);
   
-  /*
-  * Tomsulo com instrucao de desvio e despache simples das instrucoes
-  * Documentacao da Instrucao
-  *
-  * IMMEDIATE - Rx  - Ry  - OPCODE
-  * 000000    - 000 - 000 - 0000
-  *
-  * INST  - OPCODE
-  * ADD.D - 0000
-  * SUB.D - 0001
-  * L.D - 0010
-  * S.D   - 0011
-  */
-
-
   input clock;
   
   wire [15:0]R1, R2, R3, R4, R5, R6, R7, dataCDBout, nextInstruction, instOut, currentInst, Rout;
@@ -28,20 +13,19 @@ module CDB (clock);
   reg [15:0]mem[63:0]; //Memoria principal  
   
   initial begin
-	//IMPORTANTE INICIALIZAR VALORES
-  writeEnable = 0;
-  dataAddress = 0;
+	  writeEnable = 0;
+	  dataAddress = 0;
   end
 
+  IQ queue(clock, nextInstructionEnable, nextInstruction, done, disponivel); //fila de instrucoes
+  
   mux CDBmux(R1, R2, R3, R4, R5, R6, R7, instOut[9:7], Rout);
+  
+  RSadders RSa1(nextInstruction, clock, nextInstructionEnable, R1, R2, R3, R4, R5, R6, R7,instOutEnable, currentInst, done, dataCDBout, disponivel, instOut); //estacao de reserva
   
   FPregisters fpreg(clock, dataCDBin, dataAddress, writeEnable, R1, R2, R3, R4, R5, R6, R7); //registradores propriamente ditos
   
-  IQ queue(clock, nextInstructionEnable, nextInstruction, done, disponivel); //fila de instrucoes
   
-  RSadders RSa1(nextInstruction, clock, nextInstructionEnable, R1, R2, R3, R4, R5, R6, R7,instOutEnable, currentInst, done, dataCDBout, disponivel, instOut); //estacao de reserva
-
-
   always @(posedge done)
   begin
 	if(instOut[3:0] == 4'b0000 || instOut[3:0] == 4'b0001 || instOut[3:0] == 4'b0100) //add, sub e mul

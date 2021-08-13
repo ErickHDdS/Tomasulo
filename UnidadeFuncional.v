@@ -25,32 +25,37 @@ begin
 	begin	
 		disponivelUF = 0;
 		currentInst = instruction;
-		i = 1;
+		i = 0;
 		instructionCodeOut = instructionCodeIn;
 		case(instruction[3:0])
-		4'b0000: dout <= reg2 + reg1;
-		4'b0001: dout <= reg2 - reg1;
-		4'b0100: dout <= reg2 * reg1;
+			4'b0000: dout <= reg2 + reg1;
+			4'b0001: dout <= reg2 - reg1;
+			4'b0100: dout <= reg2 * reg1;
 		//complete
 		endcase
 	end
 	else
 		i = i + 1;
+
 	
-	if(currentInst[3:0] == 4'b0000 || currentInst[3:0] == 4'b0001 || currentInst[3:0] == 4'b0100) //add, sub e mul
+	if(currentInst[3:0] == 4'b0000 || currentInst[3:0] == 4'b0001 ) //add, sub e mul
 	begin
-		if(i == 2)
+		if(i == 1)
 			begin
 			done = 1'b1;
 			disponivelUF = 1;
 			end
-	end
+		end
 	else //sd e ld
 	begin
-	if(currentInst[3:0] == 4'b0010 || currentInst[3:0] == 4'b0011)
+	if(currentInst[3:0] == 4'b0100 )
 	begin
-		done = 1'b1;
-		disponivelUF = 1;
+	if(i == 2)
+			begin
+			done = 1'b1;
+			disponivelUF = 1;
+			
+		end
 	end
 	end
 end

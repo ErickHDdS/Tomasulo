@@ -57,19 +57,23 @@ vsim work.pratica3
 # vsim work.pratica3 
 # Loading work.pratica3
 # Loading work.CDB
-# Loading work.mux
-# Loading work.FPregisters
 # Loading work.IQ
+# Loading work.mux
 # Loading work.RSadders
 # Loading work.UnidadeFuncional
+# Loading work.FPregisters
 wave create -driver freeze -pattern clock -initialvalue HiZ -period 100ps -dutycycle 50 -starttime 0ps -endtime 100000ps sim:/pratica3/clock
-add wave -position end  sim:/pratica3/cdb/RSa1/R1
-add wave -position end  sim:/pratica3/cdb/RSa1/R2
-add wave -position end  sim:/pratica3/cdb/RSa1/R3
-add wave -position end  sim:/pratica3/cdb/RSa1/R4
-add wave -position end  sim:/pratica3/cdb/RSa1/R5
-add wave -position end  sim:/pratica3/cdb/RSa1/R6
-add wave -position end  sim:/pratica3/cdb/dataCDBin
+add wave -position end  sim:/pratica3/cdb/RSa1/Busy
+add wave -position end  sim:/pratica3/cdb/RSa1/OP
+add wave -position end  sim:/pratica3/cdb/RSa1/Qj
+add wave -position end  sim:/pratica3/cdb/RSa1/instOut
+add wave -position end  sim:/pratica3/cdb/RSa1/registerStatus
+add wave -position end  sim:/pratica3/cdb/RSa1/verifyWire
+add wave -position end  sim:/pratica3/cdb/R1
+add wave -position end  sim:/pratica3/cdb/R2
+add wave -position end  sim:/pratica3/cdb/R3
+add wave -position end  sim:/pratica3/cdb/R4
+add wave -position end  sim:/pratica3/cdb/R5
+add wave -position end  sim:/pratica3/cdb/R6
+add wave -position end  sim:/pratica3/cdb/R7
 run -all
-wave editwrite -file {C:/Users/Usuário/Downloads/Tomasulo/Tomasulo/TOMASULO - PRATICA 3/simulation/modelsim/wave.do}
-# Cannot open file

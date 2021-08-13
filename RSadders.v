@@ -20,7 +20,7 @@ module RSadders(instruction, Clock, Adderin, R1, R2, R3, R4, R5, R6, R7, instOut
   wire [2:0]instructionCodeOut; //retorna a linha da inst para resolver Busy
 
   reg [2:0] verifyWire; //verifica a existencia de uma instrucao com os dois operadores prontos
-  integer i;
+  integer i, PARA, PARAPORFAVOR;
   
   wire[15:0]reg1;//conecta mux a UF
   wire[15:0]reg2;//conecta mux a UF
@@ -60,49 +60,56 @@ module RSadders(instruction, Clock, Adderin, R1, R2, R3, R4, R5, R6, R7, instOut
 	
   UnidadeFuncional UF(Clock, instOut, instOutEnable, instructionCodeIn, instructionCodeOut, done, doneInst, dout, disponivelUF, reg1, reg2);
   
-  reg break1 = 0;
-  reg break2 = 0;
+  
+  // POR QUE VOCE NÃO QUER FUNCIONAR??????????/
+  // O QUE FOI QUE EU TE FIZ ????????????????
+  
   
   always @ (posedge Clock)
-  begin
-    instOut = 1'b0;
-    instOutEnable = 1'b0;
-
-    if(Adderin == 1'b1)
-    begin
-	for(i=1; i<=7; i = i + 1) begin
-
-	if(Busy[i]==1'b0 && break1 != 1)
 	begin
-	    Busy[i]=1;
-      	    OP[i][15:0] = instruction[15:0]; //guarda a instrucao inteira
-       	    if(OP[i][3:0]==4'b0000 || OP[i][3:0]==4'b0001 || OP[i][3:0]==4'b0100)
-	    begin //add, sub e mul
-	    	Qj[i] = registerStatus[instruction[9:7]]; //guarda a dependencia de Ry
-	    	Qk[i] = registerStatus[instruction[6:4]]; //guarda a dependencia de Rx
-	    	registerStatus[instruction[12:10]] = i; //Rz passa a depender da nova instrucao
-	    end
-	    else
-	    begin //ld e sd
-	    	Qj[i] = registerStatus[instruction[9:7]]; //guarda a dependencia de Ry
-	    	Qk[i] = 3'b000; //load e store só possuem um operador
-	    	registerStatus[instruction[6:4]] = i; //Rx passa a depender da nova instrucao
-	    end
-	 break2 = 1;
-	end//if Busy[i]==0
-
-	end//for
-    end// if Adderin == 1'b1
+		 instOut = 1'b0;
+		 instOutEnable = 1'b0;
+			PARA=0;
+			PARAPORFAVOR =2;
+		 if(Adderin == 1'b1)
+		 begin
+		for(i=1; i<=7; i = i + 1) begin
+			if(PARA == 0) 
+				begin
+					if(Busy[i]==1'b0 )
+					begin
+						 Busy[i]=1;
+								 OP[i][15:0] = instruction[15:0]; //guarda a instrucao inteira
+								 if(OP[i][3:0]==4'b0000 || OP[i][3:0]==4'b0001 || OP[i][3:0]==4'b0100)
+						 begin //add e sub
+							Qj[i] = registerStatus[instruction[9:7]]; //TA DANDO ERRADO AQUI
+							Qk[i] = registerStatus[instruction[6:4]]; //guarda a dependencia de Rx
+							registerStatus[instruction[12:10]] = i; //Rz passa a depender da nova instrucao
+						 end
+						 else
+						 begin //ld e sd
+							Qj[i] = registerStatus[instruction[9:7]]; //guarda a dependencia de Ry
+							Qk[i] = 3'b000; //load e store só possuem um operador
+							registerStatus[instruction[6:4]] = i; //Rx passa a depender da nova instrucao
+						 end
+						PARA =1;
+					end//if Busy[i]==0
+			end
+		end//for
+		 end// if Adderin == 1'b1
 
 
 	//Always at clock
 
 	for(i=7; i>=0; i=i-1) begin
 		
-	  if(Qj[i]== 3'b000 && Qk[i]== 3'b000 && Busy[i]==1 && break2 != 0) begin //encontrar inst pronta
-		verifyWire = i; //marca a linha
-		instructionCodeIn = i;
-		break2 = 1; //break
+	  if(Qj[i]== 3'b000 && Qk[i]== 3'b000 && Busy[i]==1) begin //encontrar inst pronta
+		if(PARAPORFAVOR == 2)
+			begin
+				verifyWire = i; //marca a linha
+				instructionCodeIn = i;
+				PARAPORFAVOR = 5;
+		end
 	  end
 
 	end
@@ -111,19 +118,19 @@ module RSadders(instruction, Clock, Adderin, R1, R2, R3, R4, R5, R6, R7, instOut
 	
   if(done==1)
   begin
-  Busy[instructionCodeOut] = 0; //linha foi desocupada
-  for(i=7; i>0; i=i-1)begin
-    if(Qj[i]==instOut[12:10])
-      begin
-      registerStatus[i]=0;
-      Qj[i]=3'b000;
-      end
-    if(Qk[i]==instOut[12:10])
-      begin
-      registerStatus[i]=0;
-      Qk[i]=3'b000;
-      end
-  end
+	  Busy[instructionCodeOut] = 0; //linha foi desocupada
+	  for(i=7; i>0; i=i-1)begin
+		 if(Qj[i]==verifyWire)//ISSO NAO DEVERIA TA AQUI, TA ERRADO E NÃO SEI CONSERTAR
+			begin
+				registerStatus[i]=0;
+				Qj[i]=3'b000;
+			end
+		 if(Qk[i]==verifyWire)
+			begin
+				registerStatus[i]=0;
+				Qk[i]=3'b000;
+			end
+	  end
   
   end
 	
