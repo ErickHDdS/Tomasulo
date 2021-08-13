@@ -4,7 +4,7 @@ entity estacaoReserva is
     port(
         instruction     : in     vl_logic_vector(15 downto 0);
         Clock           : in     vl_logic;
-        Adderin         : in     vl_logic;
+        enableInstr     : in     vl_logic;
         R1              : in     vl_logic_vector(15 downto 0);
         R2              : in     vl_logic_vector(15 downto 0);
         R3              : in     vl_logic_vector(15 downto 0);

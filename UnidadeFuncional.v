@@ -1,15 +1,17 @@
 module UnidadeFuncional(clock, instruction, iIn, instructionIn, instructionOut, done, InstAtual, out, disponivelUnidadeFuncional, R1, R2);
 
 	input [2:0]instructionIn;
-	output reg[2:0]instructionOut;
 	input [15:0]instruction;
 	input iIn, clock;
 	input [15:0] R1, R2;
+	
 	output reg done;
 	output reg [15:0]out, InstAtual;
-	integer Latencia;
+	output reg[2:0]instructionOut;
 	output reg disponivelUnidadeFuncional;
 
+	integer Latencia;
+	
 	initial begin
 		InstAtual = 16'b0000000000001111;
 		done = 0;
@@ -19,7 +21,6 @@ module UnidadeFuncional(clock, instruction, iIn, instructionIn, instructionOut, 
 	always @(posedge clock)
 	begin
 	  done=0;	
-		
 		if(iIn == 1 && disponivelUnidadeFuncional == 1)
 		begin	
 			disponivelUnidadeFuncional = 0;
@@ -51,12 +52,12 @@ module UnidadeFuncional(clock, instruction, iIn, instructionIn, instructionOut, 
 			if(InstAtual[3:0] == 4'b0100 || InstAtual[3:0] == 4'b0101)
 			begin
 				if(Latencia == 2)
-						begin
-						done = 1'b1;
-						disponivelUnidadeFuncional = 1;
-					end
+				begin
+					done = 1'b1;
+					disponivelUnidadeFuncional = 1;
 				end
 			end
+		end
 	end
 
 endmodule

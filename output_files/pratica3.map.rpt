@@ -1,5 +1,5 @@
 Analysis & Synthesis report for pratica3
-Fri Aug 13 14:08:46 2021
+Fri Aug 13 15:39:25 2021
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -44,7 +44,7 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Aug 13 14:08:46 2021           ;
+; Analysis & Synthesis Status        ; Successful - Fri Aug 13 15:39:25 2021           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; pratica3                                        ;
 ; Top-level Entity Name              ; pratica3                                        ;
@@ -258,7 +258,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Fri Aug 13 14:08:45 2021
+    Info: Processing started: Fri Aug 13 15:39:25 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off pratica3 -c pratica3
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file cdb.v
@@ -276,44 +276,44 @@ Info (12021): Found 1 design units, including 1 entities, in source file mux.v
 Warning (12019): Can't analyze file -- file regn.v is missing
 Info (12021): Found 1 design units, including 1 entities, in source file pratica3.v
     Info (12023): Found entity 1: pratica3
-Warning (10236): Verilog HDL Implicit Net warning at CDB.v(22): created implicit net for "instOutEnable"
+Warning (10236): Verilog HDL Implicit Net warning at CDB.v(25): created implicit net for "instOutEnable"
 Info (12127): Elaborating entity "pratica3" for the top level hierarchy
 Info (12128): Elaborating entity "CDB" for hierarchy "CDB:cdb"
 Warning (12125): Using design file filainstrucao.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: FilaInstrucao
 Info (12128): Elaborating entity "FilaInstrucao" for hierarchy "CDB:cdb|FilaInstrucao:fila"
 Warning (10230): Verilog HDL assignment warning at filainstrucao.v(31): truncated value with size 32 to match size of target (16)
-Warning (10030): Net "Instrucao.data_a" at filainstrucao.v(4) has no driver or initial value, using a default initial value '0'
-Warning (10030): Net "Instrucao.waddr_a" at filainstrucao.v(4) has no driver or initial value, using a default initial value '0'
-Warning (10030): Net "Instrucao.we_a" at filainstrucao.v(4) has no driver or initial value, using a default initial value '0'
+Warning (10030): Net "Instrucao.data_a" at filainstrucao.v(8) has no driver or initial value, using a default initial value '0'
+Warning (10030): Net "Instrucao.waddr_a" at filainstrucao.v(8) has no driver or initial value, using a default initial value '0'
+Warning (10030): Net "Instrucao.we_a" at filainstrucao.v(8) has no driver or initial value, using a default initial value '0'
 Info (12128): Elaborating entity "mux" for hierarchy "CDB:cdb|mux:CDBmux"
-Warning (10270): Verilog HDL Case Statement warning at mux.v(9): incomplete case statement has no default case item
-Warning (10240): Verilog HDL Always Construct warning at mux.v(9): inferring latch(es) for variable "RegOut", which holds its previous value in one or more paths through the always construct
-Info (10041): Inferred latch for "RegOut[0]" at mux.v(9)
-Info (10041): Inferred latch for "RegOut[1]" at mux.v(9)
-Info (10041): Inferred latch for "RegOut[2]" at mux.v(9)
-Info (10041): Inferred latch for "RegOut[3]" at mux.v(9)
-Info (10041): Inferred latch for "RegOut[4]" at mux.v(9)
-Info (10041): Inferred latch for "RegOut[5]" at mux.v(9)
-Info (10041): Inferred latch for "RegOut[6]" at mux.v(9)
-Info (10041): Inferred latch for "RegOut[7]" at mux.v(9)
-Info (10041): Inferred latch for "RegOut[8]" at mux.v(9)
-Info (10041): Inferred latch for "RegOut[9]" at mux.v(9)
-Info (10041): Inferred latch for "RegOut[10]" at mux.v(9)
-Info (10041): Inferred latch for "RegOut[11]" at mux.v(9)
-Info (10041): Inferred latch for "RegOut[12]" at mux.v(9)
-Info (10041): Inferred latch for "RegOut[13]" at mux.v(9)
-Info (10041): Inferred latch for "RegOut[14]" at mux.v(9)
-Info (10041): Inferred latch for "RegOut[15]" at mux.v(9)
+Warning (10270): Verilog HDL Case Statement warning at mux.v(10): incomplete case statement has no default case item
+Warning (10240): Verilog HDL Always Construct warning at mux.v(10): inferring latch(es) for variable "RegOut", which holds its previous value in one or more paths through the always construct
+Info (10041): Inferred latch for "RegOut[0]" at mux.v(10)
+Info (10041): Inferred latch for "RegOut[1]" at mux.v(10)
+Info (10041): Inferred latch for "RegOut[2]" at mux.v(10)
+Info (10041): Inferred latch for "RegOut[3]" at mux.v(10)
+Info (10041): Inferred latch for "RegOut[4]" at mux.v(10)
+Info (10041): Inferred latch for "RegOut[5]" at mux.v(10)
+Info (10041): Inferred latch for "RegOut[6]" at mux.v(10)
+Info (10041): Inferred latch for "RegOut[7]" at mux.v(10)
+Info (10041): Inferred latch for "RegOut[8]" at mux.v(10)
+Info (10041): Inferred latch for "RegOut[9]" at mux.v(10)
+Info (10041): Inferred latch for "RegOut[10]" at mux.v(10)
+Info (10041): Inferred latch for "RegOut[11]" at mux.v(10)
+Info (10041): Inferred latch for "RegOut[12]" at mux.v(10)
+Info (10041): Inferred latch for "RegOut[13]" at mux.v(10)
+Info (10041): Inferred latch for "RegOut[14]" at mux.v(10)
+Info (10041): Inferred latch for "RegOut[15]" at mux.v(10)
 Warning (12125): Using design file estacaoreserva.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: estacaoReserva
-Warning (10037): Verilog HDL or VHDL warning at estacaoreserva.v(95): conditional expression evaluates to a constant
+Warning (10037): Verilog HDL or VHDL warning at estacaoreserva.v(92): conditional expression evaluates to a constant
 Info (12128): Elaborating entity "estacaoReserva" for hierarchy "CDB:cdb|estacaoReserva:controleFuncional"
-Warning (10036): Verilog HDL or VHDL warning at estacaoreserva.v(21): object "PARACHIQK" assigned a value but never read
-Warning (10230): Verilog HDL assignment warning at estacaoreserva.v(87): truncated value with size 32 to match size of target (3)
-Warning (10230): Verilog HDL assignment warning at estacaoreserva.v(102): truncated value with size 32 to match size of target (3)
-Warning (10230): Verilog HDL assignment warning at estacaoreserva.v(103): truncated value with size 32 to match size of target (3)
-Warning (10030): Net "OP[0]" at estacaoreserva.v(11) has no driver or initial value, using a default initial value '0'
+Warning (10036): Verilog HDL or VHDL warning at estacaoreserva.v(27): object "PARACHIQK" assigned a value but never read
+Warning (10230): Verilog HDL assignment warning at estacaoreserva.v(84): truncated value with size 32 to match size of target (3)
+Warning (10230): Verilog HDL assignment warning at estacaoreserva.v(99): truncated value with size 32 to match size of target (3)
+Warning (10230): Verilog HDL assignment warning at estacaoreserva.v(100): truncated value with size 32 to match size of target (3)
+Warning (10030): Net "OP[0]" at estacaoreserva.v(9) has no driver or initial value, using a default initial value '0'
 Info (12128): Elaborating entity "UnidadeFuncional" for hierarchy "CDB:cdb|estacaoReserva:controleFuncional|UnidadeFuncional:UnFuncional"
 Warning (12125): Using design file bancoregistradores.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: BancoRegistradores
@@ -328,8 +328,8 @@ Info (21057): Implemented 1 device resources after synthesis - the final resourc
     Info (21059): Implemented 0 output pins
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 26 warnings
     Info: Peak virtual memory: 4594 megabytes
-    Info: Processing ended: Fri Aug 13 14:08:46 2021
-    Info: Elapsed time: 00:00:01
+    Info: Processing ended: Fri Aug 13 15:39:25 2021
+    Info: Elapsed time: 00:00:00
     Info: Total CPU time (on all processors): 00:00:01
 
 

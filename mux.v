@@ -2,6 +2,7 @@ module mux(R1, R2, R3, R4, R5, R6, R7, RegAddr, RegOut);
 
 	input [15:0]R1, R2, R3, R4, R5, R6, R7;
 	input [2:0]RegAddr;
+	
 	output reg [15:0]RegOut;
 
   always@(*)

@@ -5,11 +5,11 @@ cModel Technology
 Z0 dC:\Users\erick\OneDrive\Documentos\GitHub\Repositorios\LAOC II\Pratica III\Tomasulo\simulation\modelsim
 vBancoRegistradores
 !i10b 1
-!s100 Y1=[eMjZO5Q=TWcA>Lmzh3
-IX_E6zdLT0eJ4l`49`^XTz0
+!s100 48nz]2EIM4;[zh?f8nU7A1
+IdSFV7Y219OX;OXQHifm@U2
 VC2LcF5624;SYJ[ac=Q@nP1
 Z1 dC:\Users\erick\OneDrive\Documentos\GitHub\Repositorios\LAOC II\Pratica III\Tomasulo\simulation\modelsim
-w1628869979
+w1628875636
 8C:/Users/erick/OneDrive/Documentos/GitHub/Repositorios/LAOC II/Pratica III/Tomasulo/bancoregistradores.v
 FC:/Users/erick/OneDrive/Documentos/GitHub/Repositorios/LAOC II/Pratica III/Tomasulo/bancoregistradores.v
 L0 1
@@ -17,7 +17,7 @@ Z2 OV;L;10.1d;51
 r1
 !s85 0
 31
-!s108 1628874534.358000
+!s108 1628879975.685000
 !s107 C:/Users/erick/OneDrive/Documentos/GitHub/Repositorios/LAOC II/Pratica III/Tomasulo/bancoregistradores.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/erick/OneDrive/Documentos/GitHub/Repositorios/LAOC II/Pratica III/Tomasulo|C:/Users/erick/OneDrive/Documentos/GitHub/Repositorios/LAOC II/Pratica III/Tomasulo/bancoregistradores.v|
 !s101 -O0
@@ -25,10 +25,10 @@ Z3 o-vlog01compat -work work -O0
 Z4 !s92 -vlog01compat -work work {+incdir+C:/Users/erick/OneDrive/Documentos/GitHub/Repositorios/LAOC II/Pratica III/Tomasulo} -O0
 n@banco@registradores
 vCDB
-IA[6`_;CB1=g^KH;ZMh2DZ1
+IZB`l7@WSWOMU5ahD5dY9f2
 VMhbn?[za=@P4zAlg<7k?d3
 R1
-w1628869988
+w1628875278
 8C:/Users/erick/OneDrive/Documentos/GitHub/Repositorios/LAOC II/Pratica III/Tomasulo/CDB.v
 FC:/Users/erick/OneDrive/Documentos/GitHub/Repositorios/LAOC II/Pratica III/Tomasulo/CDB.v
 L0 1
@@ -39,17 +39,17 @@ R3
 n@c@d@b
 R4
 !i10b 1
-!s100 cVI9MlZDCgN8ATN5i[F1B2
+!s100 >i@:a`YMW<5b]`nVTDWJ;1
 !s85 0
-!s108 1628874534.139000
+!s108 1628879975.455000
 !s107 C:/Users/erick/OneDrive/Documentos/GitHub/Repositorios/LAOC II/Pratica III/Tomasulo/CDB.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/erick/OneDrive/Documentos/GitHub/Repositorios/LAOC II/Pratica III/Tomasulo|C:/Users/erick/OneDrive/Documentos/GitHub/Repositorios/LAOC II/Pratica III/Tomasulo/CDB.v|
 !s101 -O0
 vestacaoReserva
-ICX9f:CdfB@6YW<dZ^V^o42
-V5f4o9j:L0i1k8F7BS;^bd2
+I]`dlzaHHcdYeZ@<6_iBc_1
+V8N76HNJB2iY<7j;Kh=4jY0
 R1
-w1628874471
+w1628879964
 8C:/Users/erick/OneDrive/Documentos/GitHub/Repositorios/LAOC II/Pratica III/Tomasulo/estacaoreserva.v
 FC:/Users/erick/OneDrive/Documentos/GitHub/Repositorios/LAOC II/Pratica III/Tomasulo/estacaoreserva.v
 L0 1
@@ -60,17 +60,17 @@ R3
 R4
 nestacao@reserva
 !i10b 1
-!s100 dfV[ZkL22=>oiRWDSmSPP2
+!s100 CRXmHoTAZ;1dJ3M_JARC63
 !s85 0
-!s108 1628874534.322000
+!s108 1628879975.648000
 !s107 C:/Users/erick/OneDrive/Documentos/GitHub/Repositorios/LAOC II/Pratica III/Tomasulo/estacaoreserva.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/erick/OneDrive/Documentos/GitHub/Repositorios/LAOC II/Pratica III/Tomasulo|C:/Users/erick/OneDrive/Documentos/GitHub/Repositorios/LAOC II/Pratica III/Tomasulo/estacaoreserva.v|
 !s101 -O0
 vFilaInstrucao
-IejZhA4McZe?hWiP^bKMP;0
+I>QI>S3Z0e7QTBj1g6:ah73
 V3Zm4>:3=INE^Z9@[m56H@3
 R1
-w1628874523
+w1628875614
 8C:/Users/erick/OneDrive/Documentos/GitHub/Repositorios/LAOC II/Pratica III/Tomasulo/filainstrucao.v
 FC:/Users/erick/OneDrive/Documentos/GitHub/Repositorios/LAOC II/Pratica III/Tomasulo/filainstrucao.v
 L0 1
@@ -81,17 +81,17 @@ R3
 R4
 n@fila@instrucao
 !i10b 1
-!s100 Fk0fA[Dg9:9aFc:LV?kRU1
+!s100 SVzM`JVb:^<WE`fH3jJzo3
 !s85 0
-!s108 1628874534.287000
+!s108 1628879975.613000
 !s107 C:/Users/erick/OneDrive/Documentos/GitHub/Repositorios/LAOC II/Pratica III/Tomasulo/filainstrucao.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/erick/OneDrive/Documentos/GitHub/Repositorios/LAOC II/Pratica III/Tomasulo|C:/Users/erick/OneDrive/Documentos/GitHub/Repositorios/LAOC II/Pratica III/Tomasulo/filainstrucao.v|
 !s101 -O0
 vmux
-II^mWQEEOh`WSQbCa^ZI@g2
+IjS_:<Az]>n[Im9Yz@Y<BY1
 VYEPH27:A2BdeJ2]Fh6Hbi2
 R1
-w1628818880
+w1628875608
 8C:/Users/erick/OneDrive/Documentos/GitHub/Repositorios/LAOC II/Pratica III/Tomasulo/mux.v
 FC:/Users/erick/OneDrive/Documentos/GitHub/Repositorios/LAOC II/Pratica III/Tomasulo/mux.v
 L0 1
@@ -101,9 +101,9 @@ r1
 R3
 R4
 !i10b 1
-!s100 AfNof48bLSJc]6N=IJ:jE0
+!s100 7f<9o^8XQ3ESf^WfUHOom2
 !s85 0
-!s108 1628874534.210000
+!s108 1628879975.537000
 !s107 C:/Users/erick/OneDrive/Documentos/GitHub/Repositorios/LAOC II/Pratica III/Tomasulo/mux.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/erick/OneDrive/Documentos/GitHub/Repositorios/LAOC II/Pratica III/Tomasulo|C:/Users/erick/OneDrive/Documentos/GitHub/Repositorios/LAOC II/Pratica III/Tomasulo/mux.v|
 !s101 -O0
@@ -123,15 +123,15 @@ R4
 !i10b 1
 !s100 m^2CJn3J=Memg>j97aLiY3
 !s85 0
-!s108 1628874534.246000
+!s108 1628879975.575000
 !s107 C:/Users/erick/OneDrive/Documentos/GitHub/Repositorios/LAOC II/Pratica III/Tomasulo/pratica3.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/erick/OneDrive/Documentos/GitHub/Repositorios/LAOC II/Pratica III/Tomasulo|C:/Users/erick/OneDrive/Documentos/GitHub/Repositorios/LAOC II/Pratica III/Tomasulo/pratica3.v|
 !s101 -O0
 vUnidadeFuncional
-IeeMfl5bjiI9UiYb:kLJ5X3
+IAo7XoSMGiBc=EPX[hh:8c2
 VgX9EVS@;934K9_T[=QeXg2
 R1
-w1628869806
+w1628876828
 8C:/Users/erick/OneDrive/Documentos/GitHub/Repositorios/LAOC II/Pratica III/Tomasulo/UnidadeFuncional.v
 FC:/Users/erick/OneDrive/Documentos/GitHub/Repositorios/LAOC II/Pratica III/Tomasulo/UnidadeFuncional.v
 L0 1
@@ -142,9 +142,9 @@ R3
 R4
 n@unidade@funcional
 !i10b 1
-!s100 IU7nQH<A1iJj`3C3S4HoH2
+!s100 6?3ZHD1mVbT>E;8kQ5f643
 !s85 0
-!s108 1628874534.175000
+!s108 1628879975.499000
 !s107 C:/Users/erick/OneDrive/Documentos/GitHub/Repositorios/LAOC II/Pratica III/Tomasulo/UnidadeFuncional.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/erick/OneDrive/Documentos/GitHub/Repositorios/LAOC II/Pratica III/Tomasulo|C:/Users/erick/OneDrive/Documentos/GitHub/Repositorios/LAOC II/Pratica III/Tomasulo/UnidadeFuncional.v|
 !s101 -O0

@@ -1,13 +1,13 @@
 module FilaInstrucao(clock, outLiberado, instructionOut, disponibilidade);
   
   input clock, disponibilidade;
-  reg [15:0]Instrucao[50:0];
   
-  reg[15:0] i;
-
   output reg outLiberado;
   output reg[15:0]instructionOut;
   
+  reg [15:0]Instrucao[50:0];
+  reg[15:0] i;
+
   initial
 	begin 
 		i = 0;

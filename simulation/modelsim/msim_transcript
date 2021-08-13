@@ -63,18 +63,18 @@ vsim work.pratica3
 # Loading work.UnidadeFuncional
 # Loading work.BancoRegistradores
 do {C:/Users/erick/OneDrive/Documentos/GitHub/Repositorios/LAOC II/Pratica III/Tomasulo/simulation/modelsim/wave.do}
+# ** Error: (vish-4014) No objects found matching '/pratica3/cdb/nextInstruction'.
+# Executing ONERROR command at macro C:\Users\erick\OneDrive\Documentos\GitHub\Repositorios\LAOC II\Pratica III\Tomasulo\simulation\modelsim\wave.do line 13
+# ** Error: (vish-4014) No objects found matching '/pratica3/cdb/instOut'.
+# Executing ONERROR command at macro C:\Users\erick\OneDrive\Documentos\GitHub\Repositorios\LAOC II\Pratica III\Tomasulo\simulation\modelsim\wave.do line 15
+# ** Error: (vish-4014) No objects found matching '/pratica3/cdb/nextInstructionEnable'.
+# Executing ONERROR command at macro C:\Users\erick\OneDrive\Documentos\GitHub\Repositorios\LAOC II\Pratica III\Tomasulo\simulation\modelsim\wave.do line 16
+# ** Error: (vish-4014) No objects found matching '/pratica3/cdb/controleFuncional/verifyWire'.
+# Executing ONERROR command at macro C:\Users\erick\OneDrive\Documentos\GitHub\Repositorios\LAOC II\Pratica III\Tomasulo\simulation\modelsim\wave.do line 22
+# ** Error: (vish-4014) No objects found matching '/pratica3/cdb/controleFuncional/registerStatus'.
+# Executing ONERROR command at macro C:\Users\erick\OneDrive\Documentos\GitHub\Repositorios\LAOC II\Pratica III\Tomasulo\simulation\modelsim\wave.do line 26
 # .main_pane.wave.interior.cs.body.pw.wf
 # 1
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
 run
 run
 run
