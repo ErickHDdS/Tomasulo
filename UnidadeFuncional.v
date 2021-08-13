@@ -1,31 +1,31 @@
-module UnidadeFuncional(clock, instruction, instructIn, instructionCodeIn, instructionCodeOut, done, currentInst, out, disponivelUF, R1, R2);
+module UnidadeFuncional(clock, instruction, iIn, instructionIn, instructionOut, done, InstAtual, out, disponivelUnidadeFuncional, R1, R2);
 
-	input [2:0]instructionCodeIn;
-	output reg[2:0]instructionCodeOut;
+	input [2:0]instructionIn;
+	output reg[2:0]instructionOut;
 	input [15:0]instruction;
-	input instructIn, clock;
+	input iIn, clock;
 	input [15:0] R1, R2;
 	output reg done;
-	output reg [15:0]out, currentInst;
+	output reg [15:0]out, InstAtual;
 	integer Latencia;
-	output reg disponivelUF;
+	output reg disponivelUnidadeFuncional;
 
 	initial begin
-		currentInst = 16'b0000000000001111;
+		InstAtual = 16'b0000000000001111;
 		done = 0;
-		disponivelUF = 1;
+		disponivelUnidadeFuncional = 1;
 	end
 
 	always @(posedge clock)
 	begin
 	  done=0;	
 		
-		if(instructIn == 1 && disponivelUF == 1)
+		if(iIn == 1 && disponivelUnidadeFuncional == 1)
 		begin	
-			disponivelUF = 0;
-			currentInst = instruction;
+			disponivelUnidadeFuncional = 0;
+			InstAtual = instruction;
 			Latencia = 0;
-			instructionCodeOut = instructionCodeIn;
+			instructionOut = instructionIn;
 			case(instruction[3:0])
 				4'b0000: out <= R2 + R1;
 				4'b0001: out <= R2 - R1;
@@ -37,26 +37,26 @@ module UnidadeFuncional(clock, instruction, instructIn, instructionCodeIn, instr
 			Latencia = Latencia + 1;
 
 		// OPS: ADD E SUB
-		if(currentInst[3:0] == 4'b0000 || currentInst[3:0] == 4'b0001) 
+		if(InstAtual[3:0] == 4'b0000 || InstAtual[3:0] == 4'b0001) 
 		begin
 			if(Latencia == 1)
 				begin
 				done = 1'b1;
-				disponivelUF = 1;
+				disponivelUnidadeFuncional = 1;
 				end
 			end
 		else 
 		begin
-		// OPS: MUL E DIV
-		if(currentInst[3:0] == 4'b0100 || currentInst[3:0] == 4'b0101)
-		begin
-			if(Latencia == 2)
-					begin
-					done = 1'b1;
-					disponivelUF = 1;
+			// OPS: MUL E DIV
+			if(InstAtual[3:0] == 4'b0100 || InstAtual[3:0] == 4'b0101)
+			begin
+				if(Latencia == 2)
+						begin
+						done = 1'b1;
+						disponivelUnidadeFuncional = 1;
+					end
 				end
 			end
-		end
 	end
 
 endmodule

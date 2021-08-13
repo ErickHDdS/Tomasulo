@@ -9,16 +9,18 @@ add wave -noupdate -color White -radix unsigned /pratica3/cdb/R4
 add wave -noupdate -color Yellow -radix unsigned /pratica3/cdb/R5
 add wave -noupdate -color {Medium Orchid} -radix unsigned /pratica3/cdb/R6
 add wave -noupdate -color Blue -radix unsigned /pratica3/cdb/R7
+add wave -noupdate /pratica3/cdb/instAtual
 add wave -noupdate /pratica3/cdb/nextInstruction
+add wave -noupdate /pratica3/cdb/fila/Instrucao
 add wave -noupdate /pratica3/cdb/instOut
-add wave -noupdate /pratica3/cdb/currentInst
 add wave -noupdate /pratica3/cdb/nextInstructionEnable
-add wave -noupdate /pratica3/cdb/fila/PC1
 add wave -noupdate /pratica3/cdb/controleFuncional/Qj
 add wave -noupdate /pratica3/cdb/controleFuncional/Qk
 add wave -noupdate /pratica3/cdb/controleFuncional/OP
+add wave -noupdate /pratica3/clock
+add wave -noupdate /pratica3/cdb/controleFuncional/verifyWire
 TreeUpdate [SetDefaultTree]
-WaveRestoreCursors {{Cursor 1} {0 ps} 0}
+WaveRestoreCursors {{Cursor 1} {324 ps} 0}
 quietly wave cursor active 1
 configure wave -namecolwidth 150
 configure wave -valuecolwidth 100

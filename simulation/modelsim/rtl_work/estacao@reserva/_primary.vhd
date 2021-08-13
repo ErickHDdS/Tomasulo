@@ -1,6 +1,6 @@
 library verilog;
 use verilog.vl_types.all;
-entity RSadders is
+entity estacaoReserva is
     port(
         instruction     : in     vl_logic_vector(15 downto 0);
         Clock           : in     vl_logic;
@@ -19,4 +19,4 @@ entity RSadders is
         disponivel      : out    vl_logic;
         doneInst        : out    vl_logic_vector(15 downto 0)
     );
-end RSadders;
+end estacaoReserva;

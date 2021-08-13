@@ -1,5 +1,5 @@
 Analysis & Synthesis report for pratica3
-Fri Aug 13 11:17:47 2021
+Fri Aug 13 14:08:46 2021
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -14,7 +14,7 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. General Register Statistics
-  9. Port Connectivity Checks: "CDB:cdb|RSadders:controleFuncional"
+  9. Port Connectivity Checks: "CDB:cdb|estacaoReserva:controleFuncional"
  10. Port Connectivity Checks: "CDB:cdb|mux:CDBmux"
  11. Elapsed Time Per Partition
  12. Analysis & Synthesis Messages
@@ -44,7 +44,7 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Aug 13 11:17:47 2021           ;
+; Analysis & Synthesis Status        ; Successful - Fri Aug 13 14:08:46 2021           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; pratica3                                        ;
 ; Top-level Entity Name              ; pratica3                                        ;
@@ -157,19 +157,19 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                         ;
-+----------------------------------+-----------------+------------------------+--------------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                                                           ; Library ;
-+----------------------------------+-----------------+------------------------+--------------------------------------------------------------------------------------------------------+---------+
-; CDB.v                            ; yes             ; User Verilog HDL File  ; C:/Users/erick/OneDrive/Documentos/GitHub/Repositorios/LAOC II/Pratica III/Tomasulo/CDB.v              ;         ;
-; FPregisters.v                    ; yes             ; User Verilog HDL File  ; C:/Users/erick/OneDrive/Documentos/GitHub/Repositorios/LAOC II/Pratica III/Tomasulo/FPregisters.v      ;         ;
-; IQ.v                             ; yes             ; User Verilog HDL File  ; C:/Users/erick/OneDrive/Documentos/GitHub/Repositorios/LAOC II/Pratica III/Tomasulo/IQ.v               ;         ;
-; RSadders.v                       ; yes             ; User Verilog HDL File  ; C:/Users/erick/OneDrive/Documentos/GitHub/Repositorios/LAOC II/Pratica III/Tomasulo/RSadders.v         ;         ;
-; UnidadeFuncional.v               ; yes             ; User Verilog HDL File  ; C:/Users/erick/OneDrive/Documentos/GitHub/Repositorios/LAOC II/Pratica III/Tomasulo/UnidadeFuncional.v ;         ;
-; mux.v                            ; yes             ; User Verilog HDL File  ; C:/Users/erick/OneDrive/Documentos/GitHub/Repositorios/LAOC II/Pratica III/Tomasulo/mux.v              ;         ;
-; pratica3.v                       ; yes             ; User Verilog HDL File  ; C:/Users/erick/OneDrive/Documentos/GitHub/Repositorios/LAOC II/Pratica III/Tomasulo/pratica3.v         ;         ;
-+----------------------------------+-----------------+------------------------+--------------------------------------------------------------------------------------------------------+---------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                 ;
++----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                             ; Library ;
++----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------------------------------------+---------+
+; CDB.v                            ; yes             ; User Verilog HDL File        ; C:/Users/erick/OneDrive/Documentos/GitHub/Repositorios/LAOC II/Pratica III/Tomasulo/CDB.v                ;         ;
+; UnidadeFuncional.v               ; yes             ; User Verilog HDL File        ; C:/Users/erick/OneDrive/Documentos/GitHub/Repositorios/LAOC II/Pratica III/Tomasulo/UnidadeFuncional.v   ;         ;
+; mux.v                            ; yes             ; User Verilog HDL File        ; C:/Users/erick/OneDrive/Documentos/GitHub/Repositorios/LAOC II/Pratica III/Tomasulo/mux.v                ;         ;
+; pratica3.v                       ; yes             ; User Verilog HDL File        ; C:/Users/erick/OneDrive/Documentos/GitHub/Repositorios/LAOC II/Pratica III/Tomasulo/pratica3.v           ;         ;
+; filainstrucao.v                  ; yes             ; Auto-Found Verilog HDL File  ; C:/Users/erick/OneDrive/Documentos/GitHub/Repositorios/LAOC II/Pratica III/Tomasulo/filainstrucao.v      ;         ;
+; estacaoreserva.v                 ; yes             ; Auto-Found Verilog HDL File  ; C:/Users/erick/OneDrive/Documentos/GitHub/Repositorios/LAOC II/Pratica III/Tomasulo/estacaoreserva.v     ;         ;
+; bancoregistradores.v             ; yes             ; Auto-Found Verilog HDL File  ; C:/Users/erick/OneDrive/Documentos/GitHub/Repositorios/LAOC II/Pratica III/Tomasulo/bancoregistradores.v ;         ;
++----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------------------------------------+---------+
 
 
 +-----------------------------------------------------+
@@ -223,7 +223,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 
 
 +----------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "CDB:cdb|RSadders:controleFuncional"                                                             ;
+; Port Connectivity Checks: "CDB:cdb|estacaoReserva:controleFuncional"                                                       ;
 +------------------+--------+----------+-------------------------------------------------------------------------------------+
 ; Port             ; Type   ; Severity ; Details                                                                             ;
 +------------------+--------+----------+-------------------------------------------------------------------------------------+
@@ -258,17 +258,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Fri Aug 13 11:17:46 2021
+    Info: Processing started: Fri Aug 13 14:08:45 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off pratica3 -c pratica3
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file cdb.v
     Info (12023): Found entity 1: CDB
-Info (12021): Found 1 design units, including 1 entities, in source file fpregisters.v
-    Info (12023): Found entity 1: FPregisters
-Info (12021): Found 1 design units, including 1 entities, in source file iq.v
-    Info (12023): Found entity 1: IQ
-Info (12021): Found 1 design units, including 1 entities, in source file rsadders.v
-    Info (12023): Found entity 1: RSadders
+Warning (12019): Can't analyze file -- file FPregisters.v is missing
+Warning (12019): Can't analyze file -- file IQ.v is missing
+Warning (12019): Can't analyze file -- file RSadders.v is missing
 Warning (12019): Can't analyze file -- file RSload.v is missing
 Warning (12019): Can't analyze file -- file RSstore.v is missing
 Info (12021): Found 1 design units, including 1 entities, in source file unidadefuncional.v
@@ -276,18 +273,19 @@ Info (12021): Found 1 design units, including 1 entities, in source file unidade
 Warning (12090): Entity "mux" obtained from "mux.v" instead of from Quartus II megafunction library
 Info (12021): Found 1 design units, including 1 entities, in source file mux.v
     Info (12023): Found entity 1: mux
-Info (12021): Found 1 design units, including 1 entities, in source file regn.v
-    Info (12023): Found entity 1: regn
+Warning (12019): Can't analyze file -- file regn.v is missing
 Info (12021): Found 1 design units, including 1 entities, in source file pratica3.v
     Info (12023): Found entity 1: pratica3
-Warning (10236): Verilog HDL Implicit Net warning at CDB.v(25): created implicit net for "instOutEnable"
+Warning (10236): Verilog HDL Implicit Net warning at CDB.v(22): created implicit net for "instOutEnable"
 Info (12127): Elaborating entity "pratica3" for the top level hierarchy
 Info (12128): Elaborating entity "CDB" for hierarchy "CDB:cdb"
-Info (12128): Elaborating entity "IQ" for hierarchy "CDB:cdb|IQ:fila"
-Warning (10230): Verilog HDL assignment warning at IQ.v(31): truncated value with size 32 to match size of target (16)
-Warning (10030): Net "PC1.data_a" at IQ.v(4) has no driver or initial value, using a default initial value '0'
-Warning (10030): Net "PC1.waddr_a" at IQ.v(4) has no driver or initial value, using a default initial value '0'
-Warning (10030): Net "PC1.we_a" at IQ.v(4) has no driver or initial value, using a default initial value '0'
+Warning (12125): Using design file filainstrucao.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: FilaInstrucao
+Info (12128): Elaborating entity "FilaInstrucao" for hierarchy "CDB:cdb|FilaInstrucao:fila"
+Warning (10230): Verilog HDL assignment warning at filainstrucao.v(31): truncated value with size 32 to match size of target (16)
+Warning (10030): Net "Instrucao.data_a" at filainstrucao.v(4) has no driver or initial value, using a default initial value '0'
+Warning (10030): Net "Instrucao.waddr_a" at filainstrucao.v(4) has no driver or initial value, using a default initial value '0'
+Warning (10030): Net "Instrucao.we_a" at filainstrucao.v(4) has no driver or initial value, using a default initial value '0'
 Info (12128): Elaborating entity "mux" for hierarchy "CDB:cdb|mux:CDBmux"
 Warning (10270): Verilog HDL Case Statement warning at mux.v(9): incomplete case statement has no default case item
 Warning (10240): Verilog HDL Always Construct warning at mux.v(9): inferring latch(es) for variable "RegOut", which holds its previous value in one or more paths through the always construct
@@ -307,14 +305,19 @@ Info (10041): Inferred latch for "RegOut[12]" at mux.v(9)
 Info (10041): Inferred latch for "RegOut[13]" at mux.v(9)
 Info (10041): Inferred latch for "RegOut[14]" at mux.v(9)
 Info (10041): Inferred latch for "RegOut[15]" at mux.v(9)
-Info (12128): Elaborating entity "RSadders" for hierarchy "CDB:cdb|RSadders:controleFuncional"
-Warning (10036): Verilog HDL or VHDL warning at RSadders.v(21): object "PARACHIQK" assigned a value but never read
-Warning (10230): Verilog HDL assignment warning at RSadders.v(87): truncated value with size 32 to match size of target (3)
-Warning (10230): Verilog HDL assignment warning at RSadders.v(101): truncated value with size 32 to match size of target (3)
-Warning (10230): Verilog HDL assignment warning at RSadders.v(102): truncated value with size 32 to match size of target (3)
-Warning (10030): Net "OP[0]" at RSadders.v(11) has no driver or initial value, using a default initial value '0'
-Info (12128): Elaborating entity "UnidadeFuncional" for hierarchy "CDB:cdb|RSadders:controleFuncional|UnidadeFuncional:UnFuncional"
-Info (12128): Elaborating entity "FPregisters" for hierarchy "CDB:cdb|FPregisters:bancoRegistradores"
+Warning (12125): Using design file estacaoreserva.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: estacaoReserva
+Warning (10037): Verilog HDL or VHDL warning at estacaoreserva.v(95): conditional expression evaluates to a constant
+Info (12128): Elaborating entity "estacaoReserva" for hierarchy "CDB:cdb|estacaoReserva:controleFuncional"
+Warning (10036): Verilog HDL or VHDL warning at estacaoreserva.v(21): object "PARACHIQK" assigned a value but never read
+Warning (10230): Verilog HDL assignment warning at estacaoreserva.v(87): truncated value with size 32 to match size of target (3)
+Warning (10230): Verilog HDL assignment warning at estacaoreserva.v(102): truncated value with size 32 to match size of target (3)
+Warning (10230): Verilog HDL assignment warning at estacaoreserva.v(103): truncated value with size 32 to match size of target (3)
+Warning (10030): Net "OP[0]" at estacaoreserva.v(11) has no driver or initial value, using a default initial value '0'
+Info (12128): Elaborating entity "UnidadeFuncional" for hierarchy "CDB:cdb|estacaoReserva:controleFuncional|UnidadeFuncional:UnFuncional"
+Warning (12125): Using design file bancoregistradores.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: BancoRegistradores
+Info (12128): Elaborating entity "BancoRegistradores" for hierarchy "CDB:cdb|BancoRegistradores:bancoRegistradores"
 Info (144001): Generated suppressed messages file C:/Users/erick/OneDrive/Documentos/GitHub/Repositorios/LAOC II/Pratica III/Tomasulo/output_files/pratica3.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
@@ -323,9 +326,9 @@ Warning (21074): Design contains 1 input pin(s) that do not drive logic
 Info (21057): Implemented 1 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 1 input pins
     Info (21059): Implemented 0 output pins
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 18 warnings
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 26 warnings
     Info: Peak virtual memory: 4594 megabytes
-    Info: Processing ended: Fri Aug 13 11:17:47 2021
+    Info: Processing ended: Fri Aug 13 14:08:46 2021
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 

@@ -1,4 +1,4 @@
-module IQ(Clock, enableOut, instructionOut, done, disponivel);
+module FilaInstrucao(Clock, enableOut, instructionOut, done, disponivel);
   
   input Clock, done, disponivel;
   reg [15:0]PC1[50:0];

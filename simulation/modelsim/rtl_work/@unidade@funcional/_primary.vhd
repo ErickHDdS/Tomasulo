@@ -4,13 +4,13 @@ entity UnidadeFuncional is
     port(
         clock           : in     vl_logic;
         instruction     : in     vl_logic_vector(15 downto 0);
-        instructIn      : in     vl_logic;
-        instructionCodeIn: in     vl_logic_vector(2 downto 0);
-        instructionCodeOut: out    vl_logic_vector(2 downto 0);
+        iIn             : in     vl_logic;
+        instructionIn   : in     vl_logic_vector(2 downto 0);
+        instructionOut  : out    vl_logic_vector(2 downto 0);
         done            : out    vl_logic;
-        currentInst     : out    vl_logic_vector(15 downto 0);
+        InstAtual       : out    vl_logic_vector(15 downto 0);
         \out\           : out    vl_logic_vector(15 downto 0);
-        disponivelUF    : out    vl_logic;
+        disponivelUnidadeFuncional: out    vl_logic;
         R1              : in     vl_logic_vector(15 downto 0);
         R2              : in     vl_logic_vector(15 downto 0)
     );
