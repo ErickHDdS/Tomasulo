@@ -63,46 +63,89 @@ vsim work.pratica3
 # Loading work.UnidadeFuncional
 # Loading work.FPregisters
 do {C:/Users/erick/OneDrive/Documentos/GitHub/Repositorios/LAOC II/Pratica III/Tomasulo/simulation/modelsim/wave.do}
-# ** Error: (vish-4014) No objects found matching '/pratica3/cdb/Rout'.
-# Executing ONERROR command at macro C:\Users\erick\OneDrive\Documentos\GitHub\Repositorios\LAOC II\Pratica III\Tomasulo\simulation\modelsim\wave.do line 15
-# ** Error: (vish-4014) No objects found matching '/pratica3/cdb/RSa1/Qj'.
-# Executing ONERROR command at macro C:\Users\erick\OneDrive\Documentos\GitHub\Repositorios\LAOC II\Pratica III\Tomasulo\simulation\modelsim\wave.do line 24
-# ** Error: (vish-4014) No objects found matching '/pratica3/cdb/RSa1/Qk'.
+# ** Error: (vish-4014) No objects found matching '/pratica3/cdb/modOp/UF/i'.
+# Executing ONERROR command at macro C:\Users\erick\OneDrive\Documentos\GitHub\Repositorios\LAOC II\Pratica III\Tomasulo\simulation\modelsim\wave.do line 11
+# ** Error: (vish-4014) No objects found matching '/pratica3/cdb/modOp/Adderin'.
 # Executing ONERROR command at macro C:\Users\erick\OneDrive\Documentos\GitHub\Repositorios\LAOC II\Pratica III\Tomasulo\simulation\modelsim\wave.do line 25
-# ** Error: (vish-4014) No objects found matching '/pratica3/cdb/RSa1/OP'.
+# ** Error: (vish-4014) No objects found matching '/pratica3/cdb/modOp/instruction'.
 # Executing ONERROR command at macro C:\Users\erick\OneDrive\Documentos\GitHub\Repositorios\LAOC II\Pratica III\Tomasulo\simulation\modelsim\wave.do line 26
+# ** Error: (vish-4014) No objects found matching '/pratica3/cdb/modOp/Busy'.
+# Executing ONERROR command at macro C:\Users\erick\OneDrive\Documentos\GitHub\Repositorios\LAOC II\Pratica III\Tomasulo\simulation\modelsim\wave.do line 27
+# ** Error: (vish-4014) No objects found matching '/pratica3/cdb/modOp/instOutEnable'.
+# Executing ONERROR command at macro C:\Users\erick\OneDrive\Documentos\GitHub\Repositorios\LAOC II\Pratica III\Tomasulo\simulation\modelsim\wave.do line 28
+# ** Error: (vish-4014) No objects found matching '/pratica3/cdb/modOp/instOut'.
+# Executing ONERROR command at macro C:\Users\erick\OneDrive\Documentos\GitHub\Repositorios\LAOC II\Pratica III\Tomasulo\simulation\modelsim\wave.do line 29
+# ** Error: (vish-4014) No objects found matching '/pratica3/cdb/modOp/Qj'.
+# Executing ONERROR command at macro C:\Users\erick\OneDrive\Documentos\GitHub\Repositorios\LAOC II\Pratica III\Tomasulo\simulation\modelsim\wave.do line 30
+# ** Error: (vish-4014) No objects found matching '/pratica3/cdb/modOp/Qk'.
+# Executing ONERROR command at macro C:\Users\erick\OneDrive\Documentos\GitHub\Repositorios\LAOC II\Pratica III\Tomasulo\simulation\modelsim\wave.do line 31
+# ** Error: (vish-4014) No objects found matching '/pratica3/cdb/modOp/OP'.
+# Executing ONERROR command at macro C:\Users\erick\OneDrive\Documentos\GitHub\Repositorios\LAOC II\Pratica III\Tomasulo\simulation\modelsim\wave.do line 32
+# ** Error: (vish-4014) No objects found matching '/pratica3/cdb/modOp/done'.
+# Executing ONERROR command at macro C:\Users\erick\OneDrive\Documentos\GitHub\Repositorios\LAOC II\Pratica III\Tomasulo\simulation\modelsim\wave.do line 33
+# ** Error: (vish-4014) No objects found matching '/pratica3/cdb/modOp/dout'.
+# Executing ONERROR command at macro C:\Users\erick\OneDrive\Documentos\GitHub\Repositorios\LAOC II\Pratica III\Tomasulo\simulation\modelsim\wave.do line 34
+# ** Error: (vish-4014) No objects found matching '/pratica3/cdb/modOp/registerStatus'.
+# Executing ONERROR command at macro C:\Users\erick\OneDrive\Documentos\GitHub\Repositorios\LAOC II\Pratica III\Tomasulo\simulation\modelsim\wave.do line 35
+# ** Error: (vish-4014) No objects found matching '/pratica3/cdb/modOp/instructionCodeIn'.
+# Executing ONERROR command at macro C:\Users\erick\OneDrive\Documentos\GitHub\Repositorios\LAOC II\Pratica III\Tomasulo\simulation\modelsim\wave.do line 36
+# ** Error: (vish-4014) No objects found matching '/pratica3/cdb/modOp/instructionCodeOut'.
+# Executing ONERROR command at macro C:\Users\erick\OneDrive\Documentos\GitHub\Repositorios\LAOC II\Pratica III\Tomasulo\simulation\modelsim\wave.do line 37
+# ** Error: (vish-4014) No objects found matching '/pratica3/cdb/modOp/verifyWire'.
+# Executing ONERROR command at macro C:\Users\erick\OneDrive\Documentos\GitHub\Repositorios\LAOC II\Pratica III\Tomasulo\simulation\modelsim\wave.do line 38
+# ** Error: (vish-4014) No objects found matching '/pratica3/cdb/modOp/i'.
+# Executing ONERROR command at macro C:\Users\erick\OneDrive\Documentos\GitHub\Repositorios\LAOC II\Pratica III\Tomasulo\simulation\modelsim\wave.do line 39
+# ** Error: (vish-4014) No objects found matching '/pratica3/cdb/modOp/PARA'.
+# Executing ONERROR command at macro C:\Users\erick\OneDrive\Documentos\GitHub\Repositorios\LAOC II\Pratica III\Tomasulo\simulation\modelsim\wave.do line 40
+# ** Error: (vish-4014) No objects found matching '/pratica3/cdb/modOp/PARAPORFAVOR'.
+# Executing ONERROR command at macro C:\Users\erick\OneDrive\Documentos\GitHub\Repositorios\LAOC II\Pratica III\Tomasulo\simulation\modelsim\wave.do line 41
+# ** Error: (vish-4014) No objects found matching '/pratica3/cdb/modOp/reg1'.
+# Executing ONERROR command at macro C:\Users\erick\OneDrive\Documentos\GitHub\Repositorios\LAOC II\Pratica III\Tomasulo\simulation\modelsim\wave.do line 42
+# ** Error: (vish-4014) No objects found matching '/pratica3/cdb/modOp/reg2'.
+# Executing ONERROR command at macro C:\Users\erick\OneDrive\Documentos\GitHub\Repositorios\LAOC II\Pratica III\Tomasulo\simulation\modelsim\wave.do line 43
+# ** Error: (vish-4014) No objects found matching '/pratica3/cdb/modOp/doneInst'.
+# Executing ONERROR command at macro C:\Users\erick\OneDrive\Documentos\GitHub\Repositorios\LAOC II\Pratica III\Tomasulo\simulation\modelsim\wave.do line 44
+# ** Error: (vish-4014) No objects found matching '/pratica3/cdb/modOp/disponivelUF'.
+# Executing ONERROR command at macro C:\Users\erick\OneDrive\Documentos\GitHub\Repositorios\LAOC II\Pratica III\Tomasulo\simulation\modelsim\wave.do line 45
+# ** Error: (vish-4014) No objects found matching '/pratica3/cdb/modOp/disponivel'.
+# Executing ONERROR command at macro C:\Users\erick\OneDrive\Documentos\GitHub\Repositorios\LAOC II\Pratica III\Tomasulo\simulation\modelsim\wave.do line 46
+# ** Error: (vish-4014) No objects found matching '/pratica3/cdb/modOp/UF/instructionCodeIn'.
+# Executing ONERROR command at macro C:\Users\erick\OneDrive\Documentos\GitHub\Repositorios\LAOC II\Pratica III\Tomasulo\simulation\modelsim\wave.do line 47
+# ** Error: (vish-4014) No objects found matching '/pratica3/cdb/modOp/UF/instructionCodeOut'.
+# Executing ONERROR command at macro C:\Users\erick\OneDrive\Documentos\GitHub\Repositorios\LAOC II\Pratica III\Tomasulo\simulation\modelsim\wave.do line 48
+# ** Error: (vish-4014) No objects found matching '/pratica3/cdb/modOp/UF/instruction'.
+# Executing ONERROR command at macro C:\Users\erick\OneDrive\Documentos\GitHub\Repositorios\LAOC II\Pratica III\Tomasulo\simulation\modelsim\wave.do line 49
+# ** Error: (vish-4014) No objects found matching '/pratica3/cdb/modOp/UF/instructIn'.
+# Executing ONERROR command at macro C:\Users\erick\OneDrive\Documentos\GitHub\Repositorios\LAOC II\Pratica III\Tomasulo\simulation\modelsim\wave.do line 50
+# ** Error: (vish-4014) No objects found matching '/pratica3/cdb/modOp/UF/clock'.
+# Executing ONERROR command at macro C:\Users\erick\OneDrive\Documentos\GitHub\Repositorios\LAOC II\Pratica III\Tomasulo\simulation\modelsim\wave.do line 51
+# ** Error: (vish-4014) No objects found matching '/pratica3/cdb/modOp/UF/R1'.
+# Executing ONERROR command at macro C:\Users\erick\OneDrive\Documentos\GitHub\Repositorios\LAOC II\Pratica III\Tomasulo\simulation\modelsim\wave.do line 52
+# ** Error: (vish-4014) No objects found matching '/pratica3/cdb/modOp/UF/R2'.
+# Executing ONERROR command at macro C:\Users\erick\OneDrive\Documentos\GitHub\Repositorios\LAOC II\Pratica III\Tomasulo\simulation\modelsim\wave.do line 53
+# ** Error: (vish-4014) No objects found matching '/pratica3/cdb/modOp/UF/done'.
+# Executing ONERROR command at macro C:\Users\erick\OneDrive\Documentos\GitHub\Repositorios\LAOC II\Pratica III\Tomasulo\simulation\modelsim\wave.do line 54
+# ** Error: (vish-4014) No objects found matching '/pratica3/cdb/modOp/UF/out'.
+# Executing ONERROR command at macro C:\Users\erick\OneDrive\Documentos\GitHub\Repositorios\LAOC II\Pratica III\Tomasulo\simulation\modelsim\wave.do line 55
+# ** Error: (vish-4014) No objects found matching '/pratica3/cdb/modOp/UF/currentInst'.
+# Executing ONERROR command at macro C:\Users\erick\OneDrive\Documentos\GitHub\Repositorios\LAOC II\Pratica III\Tomasulo\simulation\modelsim\wave.do line 56
+# ** Error: (vish-4014) No objects found matching '/pratica3/cdb/modOp/UF/i'.
+# Executing ONERROR command at macro C:\Users\erick\OneDrive\Documentos\GitHub\Repositorios\LAOC II\Pratica III\Tomasulo\simulation\modelsim\wave.do line 57
+# ** Error: (vish-4014) No objects found matching '/pratica3/cdb/modOp/UF/disponivelUF'.
+# Executing ONERROR command at macro C:\Users\erick\OneDrive\Documentos\GitHub\Repositorios\LAOC II\Pratica III\Tomasulo\simulation\modelsim\wave.do line 58
 # .main_pane.wave.interior.cs.body.pw.wf
 # 1
-add wave -position end  sim:/pratica3/cdb/modOp/Qj
-add wave -position end  sim:/pratica3/cdb/modOp/Qk
-add wave -position end  sim:/pratica3/cdb/modOp/OP
-add wave -position end  sim:/pratica3/cdb/modOp/done
-add wave -position end  sim:/pratica3/cdb/modOp/dout
-add wave -position end  sim:/pratica3/cdb/modOp/registerStatus
-add wave -position end  sim:/pratica3/cdb/modOp/instructionCodeIn
-add wave -position end  sim:/pratica3/cdb/modOp/instructionCodeOut
-add wave -position end  sim:/pratica3/cdb/modOp/verifyWire
-add wave -position end  sim:/pratica3/cdb/modOp/i
-add wave -position end  sim:/pratica3/cdb/modOp/PARA
-add wave -position end  sim:/pratica3/cdb/modOp/PARAPORFAVOR
-add wave -position end  sim:/pratica3/cdb/modOp/reg1
-add wave -position end  sim:/pratica3/cdb/modOp/reg2
-add wave -position end  sim:/pratica3/cdb/modOp/doneInst
-add wave -position end  sim:/pratica3/cdb/modOp/disponivelUF
-add wave -position end  sim:/pratica3/cdb/modOp/disponivel
-add wave -position 24  sim:/pratica3/cdb/modOp/UF/i
-add wave -position 25  sim:/pratica3/cdb/modOp/UF/instructionCodeIn
-add wave -position 26  sim:/pratica3/cdb/modOp/UF/instructionCodeOut
-add wave -position 27  sim:/pratica3/cdb/modOp/UF/instruction
-add wave -position 28  sim:/pratica3/cdb/modOp/UF/instructIn
-add wave -position 29  sim:/pratica3/cdb/modOp/UF/clock
-add wave -position 30  sim:/pratica3/cdb/modOp/UF/R1
-add wave -position 31  sim:/pratica3/cdb/modOp/UF/R2
-add wave -position 32  sim:/pratica3/cdb/modOp/UF/done
-add wave -position 33  sim:/pratica3/cdb/modOp/UF/out
-add wave -position 34  sim:/pratica3/cdb/modOp/UF/currentInst
-add wave -position 35  sim:/pratica3/cdb/modOp/UF/i
-add wave -position 36  sim:/pratica3/cdb/modOp/UF/disponivelUF
+add wave -position 1 -format Logic -height 17 -editable 2 Edit:/pratica3/clock
+add wave -position 0 -format Logic -height 17 -editable 2 Edit:/pratica3/clock
+add wave -position end  sim:/pratica3/cdb/nextInstruction
+add wave -position end  sim:/pratica3/cdb/instOut
+add wave -position end  sim:/pratica3/cdb/currentInst
+add wave -position end  sim:/pratica3/cdb/nextInstructionEnable
+add wave -position end  sim:/pratica3/cdb/fila/PC1
+add wave -position end  sim:/pratica3/cdb/controleFuncional/Qj
+add wave -position end  sim:/pratica3/cdb/controleFuncional/Qk
+add wave -position end  sim:/pratica3/cdb/controleFuncional/OP
+add wave -position 1  sim:/pratica3/cdb/controleFuncional/UnFuncional/Latencia
 run
 run
 run
@@ -121,3 +164,13 @@ run
 run
 run
 run
+run
+run
+run
+run
+run
+run
+run
+run
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf {C:/Users/erick/OneDrive/Documentos/GitHub/Repositorios/LAOC II/Pratica III/Tomasulo/simulation/modelsim/FuncionaIncompletoCerto.do}
+wave editwrite -file {C:/Users/erick/OneDrive/Documentos/GitHub/Repositorios/LAOC II/Pratica III/Tomasulo/simulation/modelsim/FuncionaIncompletoCerto.do} -append

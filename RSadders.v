@@ -1,33 +1,32 @@
 module RSadders(instruction, Clock, Adderin, R1, R2, R3, R4, R5, R6, R7, instOutEnable, instOut, done, dout, disponivel, doneInst);
 
-  input[15:0] R1, R2, R3, R4, R5, R6, R7; 						//registradores para enviar para a ULA
-  input Clock, Adderin; 												//clock e controle de entrada de uma nova instrucao
-  input [15:0] instruction; 											//recebe a instrucao
-  reg [7:0] Busy; 														//1 quando a estacao de reserva e a unidade estiverem ocupadas
+  input[15:0] R1, R2, R3, R4, R5, R6, R7; 						
+  input Clock, Adderin; 												
+  input [15:0] instruction; 											
+  reg [7:0] Busy; 														
   output reg instOutEnable;
   output reg [15:0]instOut;
-  //reg [2:0] Name [7:0]; 												//guarda um apelido para a instrucao
-  reg [2:0]Qj[7:0]; 														//operando fonte, 0= já disponíve
-  reg [2:0]Qk[7:0]; 														//operando fonte, 0= já disponível
-  reg [15:0] OP [7:0]; 													//operacao em si
-  output wire done; 														//descobre quando o resultado ficou pronto
-  output wire [15:0]dout; 												//guarda o resultado da instrucao
+  reg [2:0]Qj[7:0]; 														
+  reg [2:0]Qk[7:0]; 														
+  reg [15:0] OP [7:0]; 													
+  output wire done; 														
+  output wire [15:0]dout; 												
 
-  reg [2:0]registerStatus[7:0]; 										//guarda o estado de cada registrador //0 = disponivel, valor = apelido da instrucao que ele aguarda
+  reg [2:0]registerStatus[7:0]; 										
 
-  reg [2:0]instructionCodeIn; 										//envia para a ULA a linha da inst
-  wire [2:0]instructionCodeOut; 										//retorna a linha da inst para resolver Busy
+  reg [2:0]instructionCodeIn; 										
+  wire [2:0]instructionCodeOut; 										
 
-  reg [2:0] verifyWire; 												//verifica a existencia de uma instrucao com os dois operadores prontos
-  integer i, PARA, PARAPORFAVOR;
+  reg [2:0] verifyWire; 												
+  integer i, PARA, PARAPORFAVOR, PARACHIQJ, PARACHIQK;
   
-  wire[15:0]reg1;															//conecta mux a UF
-  wire[15:0]reg2;															//conecta mux a UF
+  wire[15:0]reg1;															
+  wire[15:0]reg2;															
   output wire[15:0]doneInst;
   wire disponivelUF;
   
   output disponivel;
-  assign disponivel = ~Busy[1] | ~Busy[2] | ~Busy[3] | ~Busy[4] | ~Busy[5] | ~Busy[6] | ~Busy[7]; //marca quando algum fica disponivel
+  assign disponivel = ~Busy[1] | ~Busy[2] | ~Busy[3] | ~Busy[4] | ~Busy[5] | ~Busy[6] | ~Busy[7]; 
 
   initial
   begin
@@ -56,7 +55,7 @@ module RSadders(instruction, Clock, Adderin, R1, R2, R3, R4, R5, R6, R7, instOut
 	mux SelecR1(R1, R2, R3, R4, R5, R6, R7, instOut[6:4], reg1);
    mux SelecR2(R1, R2, R3, R4, R5, R6, R7, instOut[9:7], reg2);
 	
-   UnidadeFuncional UF(Clock, instOut, instOutEnable, instructionCodeIn, instructionCodeOut, done, doneInst, dout, disponivelUF, reg1, reg2);
+   UnidadeFuncional UnFuncional(Clock, instOut, instOutEnable, instructionCodeIn, instructionCodeOut, done, doneInst, dout, disponivelUF, reg1, reg2);
   
   
    //POR QUE VOCE NÃO QUER FUNCIONAR??????????/
@@ -69,6 +68,8 @@ module RSadders(instruction, Clock, Adderin, R1, R2, R3, R4, R5, R6, R7, instOut
 		 instOutEnable = 1'b0;
 			PARA=0;
 			PARAPORFAVOR =2;
+			PARACHIQJ = 0;
+			PARACHIQK = 0;
 		 if(Adderin == 1'b1)
 		 begin
 			for(i=1; i<=7; i = i + 1) 
@@ -79,21 +80,18 @@ module RSadders(instruction, Clock, Adderin, R1, R2, R3, R4, R5, R6, R7, instOut
 						begin
 							 Busy[i]=1;
 							 OP[i][15:0] = instruction[15:0]; //guarda a instrucao inteira
-							 if(OP[i][3:0]==4'b0000 || OP[i][3:0]==4'b0001 || OP[i][3:0]==4'b0100)
+							 if(OP[i][3:0]==4'b0000 || OP[i][3:0]==4'b0001 || OP[i][3:0]==4'b0100 || OP[i][3:0]==4'b0101)
 							 begin //add e sub
 								Qj[i] = registerStatus[instruction[9:7]]; //TA DANDO ERRADO AQUI
-								Qk[i] = registerStatus[instruction[6:4]]; //guarda a dependencia de Rx
-								registerStatus[instruction[12:10]] = i; //Rz passa a depender da nova instrucao
+								Qk[i] = registerStatus[instruction[6:4]]; //Rx
+								registerStatus[instruction[12:10]] = i; //Rz
 							 end
 							PARA =1;
-						end//if Busy[i]==0
+						end
 				   end
-			   end//for
-		   end// if Adderin == 1'b1
-
-
-		//Always at clock
-
+			   end
+		   end
+			
 		for(i=7; i>=0; i=i-1) 
 		begin	
 		  if(Qj[i]== 3'b000 && Qk[i]== 3'b000 && Busy[i]==1) 
@@ -106,18 +104,20 @@ module RSadders(instruction, Clock, Adderin, R1, R2, R3, R4, R5, R6, R7, instOut
 				end
 			end
 		end
-		
+	
 	  if(done==1)
 	  begin
 		  Busy[instructionCodeOut] = 0; //linha foi desocupada
-		  for(i=7; i>0; i=i-1)
+		  PARACHIQJ = 0;
+		  for(i=0; i<=7; i=i+1)
 		  begin
-			 if(Qj[i]==verifyWire)//ISSO NAO DEVERIA TA AQUI, TA ERRADO E NÃO SEI CONSERTAR
+			 if(Qj[i]==3'b011 || Qj[i]==3'b001  && PARACHIQJ == 0)//ISSO NAO DEVERIA TA AQUI, TA ERRADO E NÃO SEI CONSERTAR
 				begin
 					registerStatus[i]=0;
 					Qj[i]=3'b000;
+					PARACHIQJ = 1;
 				end
-			 if(Qk[i]==verifyWire)
+			 else if(Qk[i]==3'b011)
 				begin
 					registerStatus[i]=0;
 					Qk[i]=3'b000;

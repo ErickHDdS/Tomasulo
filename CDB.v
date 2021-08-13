@@ -18,13 +18,13 @@ module CDB (clock);
 	  dataAddress = 0;
   end
 
-  IQ iq(clock, nextInstructionEnable, nextInstruction, done, disponivel); //fila de instrucoes
+  IQ fila(clock, nextInstructionEnable, nextInstruction, done, disponivel); //fila de instrucoes
   
   mux CDBmux(R1, R2, R3, R4, R5, R6, R7, instOut[9:7], RegOut);
   
-  RSadders modOp(nextInstruction, clock, nextInstructionEnable, R1, R2, R3, R4, R5, R6, R7,instOutEnable, currentInst, done, dataCDBout, disponivel, instOut); //estacao de reserva
+  RSadders controleFuncional(nextInstruction, clock, nextInstructionEnable, R1, R2, R3, R4, R5, R6, R7,instOutEnable, currentInst, done, dataCDBout, disponivel, instOut); //estacao de reserva
   
-  FPregisters fpreg(clock, dataCDBin, dataAddress, writeEnable, R1, R2, R3, R4, R5, R6, R7); //registradores propriamente ditos
+  FPregisters bancoRegistradores(clock, dataCDBin, dataAddress, writeEnable, R1, R2, R3, R4, R5, R6, R7); //registradores propriamente ditos
   
   always @(posedge done)
   begin

@@ -7,7 +7,7 @@ module UnidadeFuncional(clock, instruction, instructIn, instructionCodeIn, instr
 	input [15:0] R1, R2;
 	output reg done;
 	output reg [15:0]out, currentInst;
-	integer i;
+	integer Latencia;
 	output reg disponivelUF;
 
 	initial begin
@@ -24,7 +24,7 @@ module UnidadeFuncional(clock, instruction, instructIn, instructionCodeIn, instr
 		begin	
 			disponivelUF = 0;
 			currentInst = instruction;
-			i = 0;
+			Latencia = 0;
 			instructionCodeOut = instructionCodeIn;
 			case(instruction[3:0])
 				4'b0000: out <= R2 + R1;
@@ -34,12 +34,12 @@ module UnidadeFuncional(clock, instruction, instructIn, instructionCodeIn, instr
 			endcase
 		end
 		else
-			i = i + 1;
+			Latencia = Latencia + 1;
 
 		// OPS: ADD E SUB
 		if(currentInst[3:0] == 4'b0000 || currentInst[3:0] == 4'b0001) 
 		begin
-			if(i == 1)
+			if(Latencia == 1)
 				begin
 				done = 1'b1;
 				disponivelUF = 1;
@@ -50,7 +50,7 @@ module UnidadeFuncional(clock, instruction, instructIn, instructionCodeIn, instr
 		// OPS: MUL E DIV
 		if(currentInst[3:0] == 4'b0100 || currentInst[3:0] == 4'b0101)
 		begin
-			if(i == 2)
+			if(Latencia == 2)
 					begin
 					done = 1'b1;
 					disponivelUF = 1;

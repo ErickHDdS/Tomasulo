@@ -1,5 +1,5 @@
 Analysis & Synthesis report for pratica3
-Thu Aug 12 23:26:59 2021
+Fri Aug 13 11:17:47 2021
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -14,7 +14,7 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. General Register Statistics
-  9. Port Connectivity Checks: "CDB:cdb|RSadders:modOp"
+  9. Port Connectivity Checks: "CDB:cdb|RSadders:controleFuncional"
  10. Port Connectivity Checks: "CDB:cdb|mux:CDBmux"
  11. Elapsed Time Per Partition
  12. Analysis & Synthesis Messages
@@ -44,7 +44,7 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Aug 12 23:26:59 2021           ;
+; Analysis & Synthesis Status        ; Successful - Fri Aug 13 11:17:47 2021           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; pratica3                                        ;
 ; Top-level Entity Name              ; pratica3                                        ;
@@ -223,7 +223,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 
 
 +----------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "CDB:cdb|RSadders:modOp"                                                                         ;
+; Port Connectivity Checks: "CDB:cdb|RSadders:controleFuncional"                                                             ;
 +------------------+--------+----------+-------------------------------------------------------------------------------------+
 ; Port             ; Type   ; Severity ; Details                                                                             ;
 +------------------+--------+----------+-------------------------------------------------------------------------------------+
@@ -258,7 +258,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Thu Aug 12 23:26:58 2021
+    Info: Processing started: Fri Aug 13 11:17:46 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off pratica3 -c pratica3
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file cdb.v
@@ -283,7 +283,7 @@ Info (12021): Found 1 design units, including 1 entities, in source file pratica
 Warning (10236): Verilog HDL Implicit Net warning at CDB.v(25): created implicit net for "instOutEnable"
 Info (12127): Elaborating entity "pratica3" for the top level hierarchy
 Info (12128): Elaborating entity "CDB" for hierarchy "CDB:cdb"
-Info (12128): Elaborating entity "IQ" for hierarchy "CDB:cdb|IQ:iq"
+Info (12128): Elaborating entity "IQ" for hierarchy "CDB:cdb|IQ:fila"
 Warning (10230): Verilog HDL assignment warning at IQ.v(31): truncated value with size 32 to match size of target (16)
 Warning (10030): Net "PC1.data_a" at IQ.v(4) has no driver or initial value, using a default initial value '0'
 Warning (10030): Net "PC1.waddr_a" at IQ.v(4) has no driver or initial value, using a default initial value '0'
@@ -307,15 +307,14 @@ Info (10041): Inferred latch for "RegOut[12]" at mux.v(9)
 Info (10041): Inferred latch for "RegOut[13]" at mux.v(9)
 Info (10041): Inferred latch for "RegOut[14]" at mux.v(9)
 Info (10041): Inferred latch for "RegOut[15]" at mux.v(9)
-Info (12128): Elaborating entity "RSadders" for hierarchy "CDB:cdb|RSadders:modOp"
-Warning (10230): Verilog HDL assignment warning at RSadders.v(86): truncated value with size 32 to match size of target (3)
-Warning (10230): Verilog HDL assignment warning at RSadders.v(103): truncated value with size 32 to match size of target (3)
-Warning (10230): Verilog HDL assignment warning at RSadders.v(104): truncated value with size 32 to match size of target (3)
-Warning (10030): Net "Qj[0]" at RSadders.v(10) has no driver or initial value, using a default initial value '0'
-Warning (10030): Net "Qk[0]" at RSadders.v(11) has no driver or initial value, using a default initial value '0'
-Warning (10030): Net "OP[0]" at RSadders.v(12) has no driver or initial value, using a default initial value '0'
-Info (12128): Elaborating entity "UnidadeFuncional" for hierarchy "CDB:cdb|RSadders:modOp|UnidadeFuncional:UF"
-Info (12128): Elaborating entity "FPregisters" for hierarchy "CDB:cdb|FPregisters:fpreg"
+Info (12128): Elaborating entity "RSadders" for hierarchy "CDB:cdb|RSadders:controleFuncional"
+Warning (10036): Verilog HDL or VHDL warning at RSadders.v(21): object "PARACHIQK" assigned a value but never read
+Warning (10230): Verilog HDL assignment warning at RSadders.v(87): truncated value with size 32 to match size of target (3)
+Warning (10230): Verilog HDL assignment warning at RSadders.v(101): truncated value with size 32 to match size of target (3)
+Warning (10230): Verilog HDL assignment warning at RSadders.v(102): truncated value with size 32 to match size of target (3)
+Warning (10030): Net "OP[0]" at RSadders.v(11) has no driver or initial value, using a default initial value '0'
+Info (12128): Elaborating entity "UnidadeFuncional" for hierarchy "CDB:cdb|RSadders:controleFuncional|UnidadeFuncional:UnFuncional"
+Info (12128): Elaborating entity "FPregisters" for hierarchy "CDB:cdb|FPregisters:bancoRegistradores"
 Info (144001): Generated suppressed messages file C:/Users/erick/OneDrive/Documentos/GitHub/Repositorios/LAOC II/Pratica III/Tomasulo/output_files/pratica3.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
@@ -324,9 +323,9 @@ Warning (21074): Design contains 1 input pin(s) that do not drive logic
 Info (21057): Implemented 1 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 1 input pins
     Info (21059): Implemented 0 output pins
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 19 warnings
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 18 warnings
     Info: Peak virtual memory: 4594 megabytes
-    Info: Processing ended: Thu Aug 12 23:26:59 2021
+    Info: Processing ended: Fri Aug 13 11:17:47 2021
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 

@@ -6,7 +6,7 @@ clock => clock.IN1
 clock => clock.IN3
 
 
-|pratica3|CDB:cdb|IQ:iq
+|pratica3|CDB:cdb|IQ:fila
 Clock => i[0].CLK
 Clock => i[1].CLK
 Clock => i[2].CLK
@@ -275,7 +275,7 @@ RegOut[14] <= RegOut[14]$latch.DB_MAX_OUTPUT_PORT_TYPE
 RegOut[15] <= RegOut[15]$latch.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|pratica3|CDB:cdb|RSadders:modOp
+|pratica3|CDB:cdb|RSadders:controleFuncional
 instruction[0] => OP.DATAB
 instruction[0] => OP.DATAB
 instruction[0] => OP.DATAB
@@ -286,6 +286,7 @@ instruction[0] => OP.DATAB
 instruction[0] => Equal0.IN3
 instruction[0] => Equal1.IN0
 instruction[0] => Equal2.IN3
+instruction[0] => Equal3.IN1
 instruction[1] => OP.DATAB
 instruction[1] => OP.DATAB
 instruction[1] => OP.DATAB
@@ -296,6 +297,7 @@ instruction[1] => OP.DATAB
 instruction[1] => Equal0.IN2
 instruction[1] => Equal1.IN3
 instruction[1] => Equal2.IN2
+instruction[1] => Equal3.IN3
 instruction[2] => OP.DATAB
 instruction[2] => OP.DATAB
 instruction[2] => OP.DATAB
@@ -306,6 +308,7 @@ instruction[2] => OP.DATAB
 instruction[2] => Equal0.IN1
 instruction[2] => Equal1.IN2
 instruction[2] => Equal2.IN0
+instruction[2] => Equal3.IN0
 instruction[3] => OP.DATAB
 instruction[3] => OP.DATAB
 instruction[3] => OP.DATAB
@@ -316,6 +319,7 @@ instruction[3] => OP.DATAB
 instruction[3] => Equal0.IN0
 instruction[3] => Equal1.IN1
 instruction[3] => Equal2.IN1
+instruction[3] => Equal3.IN2
 instruction[4] => Mux3.IN2
 instruction[4] => Mux4.IN2
 instruction[4] => Mux5.IN2
@@ -712,9 +716,9 @@ Adderin => registerStatus.OUTPUTSELECT
 Adderin => registerStatus.OUTPUTSELECT
 Adderin => registerStatus.OUTPUTSELECT
 Adderin => registerStatus.OUTPUTSELECT
-Adderin => registerStatus[0][2].ENA
-Adderin => registerStatus[0][1].ENA
-Adderin => registerStatus[0][0].ENA
+Adderin => registerStatus.OUTPUTSELECT
+Adderin => registerStatus.OUTPUTSELECT
+Adderin => registerStatus.OUTPUTSELECT
 R1[0] => R1[0].IN2
 R1[1] => R1[1].IN2
 R1[2] => R1[2].IN2
@@ -844,43 +848,43 @@ instOut[12] <= instOut[12].DB_MAX_OUTPUT_PORT_TYPE
 instOut[13] <= instOut[13].DB_MAX_OUTPUT_PORT_TYPE
 instOut[14] <= instOut[14].DB_MAX_OUTPUT_PORT_TYPE
 instOut[15] <= instOut[15].DB_MAX_OUTPUT_PORT_TYPE
-done <= UnidadeFuncional:UF.port5
-dout[0] <= UnidadeFuncional:UF.port7
-dout[1] <= UnidadeFuncional:UF.port7
-dout[2] <= UnidadeFuncional:UF.port7
-dout[3] <= UnidadeFuncional:UF.port7
-dout[4] <= UnidadeFuncional:UF.port7
-dout[5] <= UnidadeFuncional:UF.port7
-dout[6] <= UnidadeFuncional:UF.port7
-dout[7] <= UnidadeFuncional:UF.port7
-dout[8] <= UnidadeFuncional:UF.port7
-dout[9] <= UnidadeFuncional:UF.port7
-dout[10] <= UnidadeFuncional:UF.port7
-dout[11] <= UnidadeFuncional:UF.port7
-dout[12] <= UnidadeFuncional:UF.port7
-dout[13] <= UnidadeFuncional:UF.port7
-dout[14] <= UnidadeFuncional:UF.port7
-dout[15] <= UnidadeFuncional:UF.port7
+done <= UnidadeFuncional:UnFuncional.port5
+dout[0] <= UnidadeFuncional:UnFuncional.port7
+dout[1] <= UnidadeFuncional:UnFuncional.port7
+dout[2] <= UnidadeFuncional:UnFuncional.port7
+dout[3] <= UnidadeFuncional:UnFuncional.port7
+dout[4] <= UnidadeFuncional:UnFuncional.port7
+dout[5] <= UnidadeFuncional:UnFuncional.port7
+dout[6] <= UnidadeFuncional:UnFuncional.port7
+dout[7] <= UnidadeFuncional:UnFuncional.port7
+dout[8] <= UnidadeFuncional:UnFuncional.port7
+dout[9] <= UnidadeFuncional:UnFuncional.port7
+dout[10] <= UnidadeFuncional:UnFuncional.port7
+dout[11] <= UnidadeFuncional:UnFuncional.port7
+dout[12] <= UnidadeFuncional:UnFuncional.port7
+dout[13] <= UnidadeFuncional:UnFuncional.port7
+dout[14] <= UnidadeFuncional:UnFuncional.port7
+dout[15] <= UnidadeFuncional:UnFuncional.port7
 disponivel <= disponivel.DB_MAX_OUTPUT_PORT_TYPE
-doneInst[0] <= UnidadeFuncional:UF.port6
-doneInst[1] <= UnidadeFuncional:UF.port6
-doneInst[2] <= UnidadeFuncional:UF.port6
-doneInst[3] <= UnidadeFuncional:UF.port6
-doneInst[4] <= UnidadeFuncional:UF.port6
-doneInst[5] <= UnidadeFuncional:UF.port6
-doneInst[6] <= UnidadeFuncional:UF.port6
-doneInst[7] <= UnidadeFuncional:UF.port6
-doneInst[8] <= UnidadeFuncional:UF.port6
-doneInst[9] <= UnidadeFuncional:UF.port6
-doneInst[10] <= UnidadeFuncional:UF.port6
-doneInst[11] <= UnidadeFuncional:UF.port6
-doneInst[12] <= UnidadeFuncional:UF.port6
-doneInst[13] <= UnidadeFuncional:UF.port6
-doneInst[14] <= UnidadeFuncional:UF.port6
-doneInst[15] <= UnidadeFuncional:UF.port6
+doneInst[0] <= UnidadeFuncional:UnFuncional.port6
+doneInst[1] <= UnidadeFuncional:UnFuncional.port6
+doneInst[2] <= UnidadeFuncional:UnFuncional.port6
+doneInst[3] <= UnidadeFuncional:UnFuncional.port6
+doneInst[4] <= UnidadeFuncional:UnFuncional.port6
+doneInst[5] <= UnidadeFuncional:UnFuncional.port6
+doneInst[6] <= UnidadeFuncional:UnFuncional.port6
+doneInst[7] <= UnidadeFuncional:UnFuncional.port6
+doneInst[8] <= UnidadeFuncional:UnFuncional.port6
+doneInst[9] <= UnidadeFuncional:UnFuncional.port6
+doneInst[10] <= UnidadeFuncional:UnFuncional.port6
+doneInst[11] <= UnidadeFuncional:UnFuncional.port6
+doneInst[12] <= UnidadeFuncional:UnFuncional.port6
+doneInst[13] <= UnidadeFuncional:UnFuncional.port6
+doneInst[14] <= UnidadeFuncional:UnFuncional.port6
+doneInst[15] <= UnidadeFuncional:UnFuncional.port6
 
 
-|pratica3|CDB:cdb|RSadders:modOp|mux:SelecR1
+|pratica3|CDB:cdb|RSadders:controleFuncional|mux:SelecR1
 R1[0] => Mux0.IN1
 R1[1] => Mux1.IN1
 R1[2] => Mux2.IN1
@@ -1062,7 +1066,7 @@ RegOut[14] <= RegOut[14]$latch.DB_MAX_OUTPUT_PORT_TYPE
 RegOut[15] <= RegOut[15]$latch.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|pratica3|CDB:cdb|RSadders:modOp|mux:SelecR2
+|pratica3|CDB:cdb|RSadders:controleFuncional|mux:SelecR2
 R1[0] => Mux0.IN1
 R1[1] => Mux1.IN1
 R1[2] => Mux2.IN1
@@ -1244,7 +1248,7 @@ RegOut[14] <= RegOut[14]$latch.DB_MAX_OUTPUT_PORT_TYPE
 RegOut[15] <= RegOut[15]$latch.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|pratica3|CDB:cdb|RSadders:modOp|UnidadeFuncional:UF
+|pratica3|CDB:cdb|RSadders:controleFuncional|UnidadeFuncional:UnFuncional
 clock => out[0]~reg0.CLK
 clock => out[1]~reg0.CLK
 clock => out[2]~reg0.CLK
@@ -1264,38 +1268,38 @@ clock => out[15]~reg0.CLK
 clock => instructionCodeOut[0]~reg0.CLK
 clock => instructionCodeOut[1]~reg0.CLK
 clock => instructionCodeOut[2]~reg0.CLK
-clock => i[0].CLK
-clock => i[1].CLK
-clock => i[2].CLK
-clock => i[3].CLK
-clock => i[4].CLK
-clock => i[5].CLK
-clock => i[6].CLK
-clock => i[7].CLK
-clock => i[8].CLK
-clock => i[9].CLK
-clock => i[10].CLK
-clock => i[11].CLK
-clock => i[12].CLK
-clock => i[13].CLK
-clock => i[14].CLK
-clock => i[15].CLK
-clock => i[16].CLK
-clock => i[17].CLK
-clock => i[18].CLK
-clock => i[19].CLK
-clock => i[20].CLK
-clock => i[21].CLK
-clock => i[22].CLK
-clock => i[23].CLK
-clock => i[24].CLK
-clock => i[25].CLK
-clock => i[26].CLK
-clock => i[27].CLK
-clock => i[28].CLK
-clock => i[29].CLK
-clock => i[30].CLK
-clock => i[31].CLK
+clock => Latencia[0].CLK
+clock => Latencia[1].CLK
+clock => Latencia[2].CLK
+clock => Latencia[3].CLK
+clock => Latencia[4].CLK
+clock => Latencia[5].CLK
+clock => Latencia[6].CLK
+clock => Latencia[7].CLK
+clock => Latencia[8].CLK
+clock => Latencia[9].CLK
+clock => Latencia[10].CLK
+clock => Latencia[11].CLK
+clock => Latencia[12].CLK
+clock => Latencia[13].CLK
+clock => Latencia[14].CLK
+clock => Latencia[15].CLK
+clock => Latencia[16].CLK
+clock => Latencia[17].CLK
+clock => Latencia[18].CLK
+clock => Latencia[19].CLK
+clock => Latencia[20].CLK
+clock => Latencia[21].CLK
+clock => Latencia[22].CLK
+clock => Latencia[23].CLK
+clock => Latencia[24].CLK
+clock => Latencia[25].CLK
+clock => Latencia[26].CLK
+clock => Latencia[27].CLK
+clock => Latencia[28].CLK
+clock => Latencia[29].CLK
+clock => Latencia[30].CLK
+clock => Latencia[31].CLK
 clock => currentInst[0]~reg0.CLK
 clock => currentInst[1]~reg0.CLK
 clock => currentInst[2]~reg0.CLK
@@ -1565,7 +1569,7 @@ R2[15] => Mult0.IN16
 R2[15] => Div0.IN16
 
 
-|pratica3|CDB:cdb|FPregisters:fpreg
+|pratica3|CDB:cdb|FPregisters:bancoRegistradores
 clock => R7[0]~reg0.CLK
 clock => R7[1]~reg0.CLK
 clock => R7[2]~reg0.CLK
