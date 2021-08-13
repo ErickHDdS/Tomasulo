@@ -2,35 +2,35 @@ m255
 K3
 13
 cModel Technology
-Z0 dC:\Users\Usuário\Downloads\Tomasulo\Tomasulo\TOMASULO - PRATICA 3\simulation\modelsim
+Z0 dC:\Users\erick\OneDrive\Documentos\GitHub\Repositorios\LAOC II\Pratica III\Tomasulo\simulation\modelsim
 vCDB
-IXo0o[AGF8Dd4c>;VI0nZC2
+IemGTe6S^HmEEGcj;Hn?A11
 VMhbn?[za=@P4zAlg<7k?d3
-Z1 dC:\Users\Usuário\Downloads\Tomasulo\Tomasulo\TOMASULO - PRATICA 3\simulation\modelsim
-w1628817933
-8C:/Users/Usuário/Downloads/Tomasulo/Tomasulo/TOMASULO - PRATICA 3/CDB.v
-FC:/Users/Usuário/Downloads/Tomasulo/Tomasulo/TOMASULO - PRATICA 3/CDB.v
+Z1 dC:\Users\erick\OneDrive\Documentos\GitHub\Repositorios\LAOC II\Pratica III\Tomasulo\simulation\modelsim
+w1628820078
+8C:/Users/erick/OneDrive/Documentos/GitHub/Repositorios/LAOC II/Pratica III/Tomasulo/CDB.v
+FC:/Users/erick/OneDrive/Documentos/GitHub/Repositorios/LAOC II/Pratica III/Tomasulo/CDB.v
 L0 1
 Z2 OV;L;10.1d;51
 r1
 31
 Z3 o-vlog01compat -work work -O0
 n@c@d@b
-Z4 !s92 -vlog01compat -work work {+incdir+C:/Users/Usuário/Downloads/Tomasulo/Tomasulo/TOMASULO - PRATICA 3} -O0
+Z4 !s92 -vlog01compat -work work {+incdir+C:/Users/erick/OneDrive/Documentos/GitHub/Repositorios/LAOC II/Pratica III/Tomasulo} -O0
 !i10b 1
-!s100 Ui0c6CT0PBPABnGYjNVLE2
+!s100 >f_cRIi837?Kmk2cj1G;l2
 !s85 0
-!s108 1628827936.976000
-!s107 C:/Users/Usuário/Downloads/Tomasulo/Tomasulo/TOMASULO - PRATICA 3/CDB.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Usuário/Downloads/Tomasulo/Tomasulo/TOMASULO - PRATICA 3|C:/Users/Usuário/Downloads/Tomasulo/Tomasulo/TOMASULO - PRATICA 3/CDB.v|
+!s108 1628821637.298000
+!s107 C:/Users/erick/OneDrive/Documentos/GitHub/Repositorios/LAOC II/Pratica III/Tomasulo/CDB.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/erick/OneDrive/Documentos/GitHub/Repositorios/LAOC II/Pratica III/Tomasulo|C:/Users/erick/OneDrive/Documentos/GitHub/Repositorios/LAOC II/Pratica III/Tomasulo/CDB.v|
 !s101 -O0
 vFPregisters
-IeBDJ_zX:Y:UK_VDIdAU0z0
+ILjT_gg24l4]T@7kAagAca3
 VTGlNgRbb;_WTJ<h?o4CmX0
 R1
-w1628737548
-8C:/Users/Usuário/Downloads/Tomasulo/Tomasulo/TOMASULO - PRATICA 3/FPregisters.v
-FC:/Users/Usuário/Downloads/Tomasulo/Tomasulo/TOMASULO - PRATICA 3/FPregisters.v
+w1628820613
+8C:/Users/erick/OneDrive/Documentos/GitHub/Repositorios/LAOC II/Pratica III/Tomasulo/FPregisters.v
+FC:/Users/erick/OneDrive/Documentos/GitHub/Repositorios/LAOC II/Pratica III/Tomasulo/FPregisters.v
 L0 1
 R2
 r1
@@ -39,19 +39,19 @@ R3
 R4
 n@f@pregisters
 !i10b 1
-!s100 l:QVEGlgi]K`W19lflNT:0
+!s100 ;VL30J`AW3=nXVP65aI:81
 !s85 0
-!s108 1628827937.305000
-!s107 C:/Users/Usuário/Downloads/Tomasulo/Tomasulo/TOMASULO - PRATICA 3/FPregisters.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Usuário/Downloads/Tomasulo/Tomasulo/TOMASULO - PRATICA 3|C:/Users/Usuário/Downloads/Tomasulo/Tomasulo/TOMASULO - PRATICA 3/FPregisters.v|
+!s108 1628821637.343000
+!s107 C:/Users/erick/OneDrive/Documentos/GitHub/Repositorios/LAOC II/Pratica III/Tomasulo/FPregisters.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/erick/OneDrive/Documentos/GitHub/Repositorios/LAOC II/Pratica III/Tomasulo|C:/Users/erick/OneDrive/Documentos/GitHub/Repositorios/LAOC II/Pratica III/Tomasulo/FPregisters.v|
 !s101 -O0
 vIQ
-I`Yh8Qb?V7Sc6lcFPCTHd91
+I4h<>F3>>VZnnGO04VAc@03
 VmzTHRDYS91<dKd@ofBYY42
 R1
-w1628739737
-8C:/Users/Usuário/Downloads/Tomasulo/Tomasulo/TOMASULO - PRATICA 3/IQ.v
-FC:/Users/Usuário/Downloads/Tomasulo/Tomasulo/TOMASULO - PRATICA 3/IQ.v
+w1628818437
+8C:/Users/erick/OneDrive/Documentos/GitHub/Repositorios/LAOC II/Pratica III/Tomasulo/IQ.v
+FC:/Users/erick/OneDrive/Documentos/GitHub/Repositorios/LAOC II/Pratica III/Tomasulo/IQ.v
 L0 1
 R2
 r1
@@ -60,19 +60,19 @@ R3
 R4
 n@i@q
 !i10b 1
-!s100 J9@ha61`=5_fA6PQoVBjA3
+!s100 ^hS`Y<R?`i]7ADKf;NOB:0
 !s85 0
-!s108 1628827937.558000
-!s107 C:/Users/Usuário/Downloads/Tomasulo/Tomasulo/TOMASULO - PRATICA 3/IQ.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Usuário/Downloads/Tomasulo/Tomasulo/TOMASULO - PRATICA 3|C:/Users/Usuário/Downloads/Tomasulo/Tomasulo/TOMASULO - PRATICA 3/IQ.v|
+!s108 1628821637.382000
+!s107 C:/Users/erick/OneDrive/Documentos/GitHub/Repositorios/LAOC II/Pratica III/Tomasulo/IQ.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/erick/OneDrive/Documentos/GitHub/Repositorios/LAOC II/Pratica III/Tomasulo|C:/Users/erick/OneDrive/Documentos/GitHub/Repositorios/LAOC II/Pratica III/Tomasulo/IQ.v|
 !s101 -O0
 vmux
-I86[]Da59b@`>6nD>kkV_A1
-VacQ_Z9IFUTYaS`;IkEo`92
+II^mWQEEOh`WSQbCa^ZI@g2
+VYEPH27:A2BdeJ2]Fh6Hbi2
 R1
-w1628642174
-8C:/Users/Usuário/Downloads/Tomasulo/Tomasulo/TOMASULO - PRATICA 3/mux.v
-FC:/Users/Usuário/Downloads/Tomasulo/Tomasulo/TOMASULO - PRATICA 3/mux.v
+w1628818880
+8C:/Users/erick/OneDrive/Documentos/GitHub/Repositorios/LAOC II/Pratica III/Tomasulo/mux.v
+FC:/Users/erick/OneDrive/Documentos/GitHub/Repositorios/LAOC II/Pratica III/Tomasulo/mux.v
 L0 1
 R2
 r1
@@ -80,39 +80,39 @@ r1
 R3
 R4
 !i10b 1
-!s100 JS@M8NihnH@ScVbZzQ``f3
+!s100 AfNof48bLSJc]6N=IJ:jE0
 !s85 0
-!s108 1628827938.325000
-!s107 C:/Users/Usuário/Downloads/Tomasulo/Tomasulo/TOMASULO - PRATICA 3/mux.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Usuário/Downloads/Tomasulo/Tomasulo/TOMASULO - PRATICA 3|C:/Users/Usuário/Downloads/Tomasulo/Tomasulo/TOMASULO - PRATICA 3/mux.v|
+!s108 1628821637.515000
+!s107 C:/Users/erick/OneDrive/Documentos/GitHub/Repositorios/LAOC II/Pratica III/Tomasulo/mux.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/erick/OneDrive/Documentos/GitHub/Repositorios/LAOC II/Pratica III/Tomasulo|C:/Users/erick/OneDrive/Documentos/GitHub/Repositorios/LAOC II/Pratica III/Tomasulo/mux.v|
 !s101 -O0
 vpratica3
 !i10b 1
-!s100 nz:D^Y5LmPI7QHbPKAkbb0
-IM^DG40?5M44FP=3;ZFI^U1
+!s100 zjZCU5G]E`Oe8MDG8l28_3
+I^7hVjQ<dOB9c_>J9dKdOz0
 VXbhND@lo3DgGZ^8njQmbc3
 R1
-w1628739709
-8C:/Users/Usuário/Downloads/Tomasulo/Tomasulo/TOMASULO - PRATICA 3/pratica3.v
-FC:/Users/Usuário/Downloads/Tomasulo/Tomasulo/TOMASULO - PRATICA 3/pratica3.v
+w1628818456
+8C:/Users/erick/OneDrive/Documentos/GitHub/Repositorios/LAOC II/Pratica III/Tomasulo/pratica3.v
+FC:/Users/erick/OneDrive/Documentos/GitHub/Repositorios/LAOC II/Pratica III/Tomasulo/pratica3.v
 L0 1
 R2
 r1
 !s85 0
 31
-!s108 1628827938.639000
-!s107 C:/Users/Usuário/Downloads/Tomasulo/Tomasulo/TOMASULO - PRATICA 3/pratica3.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Usuário/Downloads/Tomasulo/Tomasulo/TOMASULO - PRATICA 3|C:/Users/Usuário/Downloads/Tomasulo/Tomasulo/TOMASULO - PRATICA 3/pratica3.v|
+!s108 1628821637.555000
+!s107 C:/Users/erick/OneDrive/Documentos/GitHub/Repositorios/LAOC II/Pratica III/Tomasulo/pratica3.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/erick/OneDrive/Documentos/GitHub/Repositorios/LAOC II/Pratica III/Tomasulo|C:/Users/erick/OneDrive/Documentos/GitHub/Repositorios/LAOC II/Pratica III/Tomasulo/pratica3.v|
 !s101 -O0
 R3
 R4
 vRSadders
-Idz5S:jfFbBBMb0cgIiEI23
+Ii7zm0N@X>_@STFRnL8zXj2
 V]<2VGAn`1FAWi^D3<Ylio2
 R1
-w1628827910
-8C:/Users/Usuário/Downloads/Tomasulo/Tomasulo/TOMASULO - PRATICA 3/RSadders.v
-FC:/Users/Usuário/Downloads/Tomasulo/Tomasulo/TOMASULO - PRATICA 3/RSadders.v
+w1628821026
+8C:/Users/erick/OneDrive/Documentos/GitHub/Repositorios/LAOC II/Pratica III/Tomasulo/RSadders.v
+FC:/Users/erick/OneDrive/Documentos/GitHub/Repositorios/LAOC II/Pratica III/Tomasulo/RSadders.v
 L0 1
 R2
 r1
@@ -121,19 +121,19 @@ R3
 R4
 n@r@sadders
 !i10b 1
-!s100 EXFo@X1;XdKRWimTEKNV?0
+!s100 _L7i2>Q:e4:V4Kbj]k6eR2
 !s85 0
-!s108 1628827937.794000
-!s107 C:/Users/Usuário/Downloads/Tomasulo/Tomasulo/TOMASULO - PRATICA 3/RSadders.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Usuário/Downloads/Tomasulo/Tomasulo/TOMASULO - PRATICA 3|C:/Users/Usuário/Downloads/Tomasulo/Tomasulo/TOMASULO - PRATICA 3/RSadders.v|
+!s108 1628821637.422000
+!s107 C:/Users/erick/OneDrive/Documentos/GitHub/Repositorios/LAOC II/Pratica III/Tomasulo/RSadders.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/erick/OneDrive/Documentos/GitHub/Repositorios/LAOC II/Pratica III/Tomasulo|C:/Users/erick/OneDrive/Documentos/GitHub/Repositorios/LAOC II/Pratica III/Tomasulo/RSadders.v|
 !s101 -O0
 vUnidadeFuncional
-IKCIS^SCzgbPNj[mZR;Qk?2
-VafMTV`NEK@JflXdZnKV]F2
+IFR>e1LMf`OAF@9@H75KOk2
+VJ@FV93h@kWMB2OVjSZB5P0
 R1
-w1628809510
-8C:/Users/Usuário/Downloads/Tomasulo/Tomasulo/TOMASULO - PRATICA 3/UnidadeFuncional.v
-FC:/Users/Usuário/Downloads/Tomasulo/Tomasulo/TOMASULO - PRATICA 3/UnidadeFuncional.v
+w1628820730
+8C:/Users/erick/OneDrive/Documentos/GitHub/Repositorios/LAOC II/Pratica III/Tomasulo/UnidadeFuncional.v
+FC:/Users/erick/OneDrive/Documentos/GitHub/Repositorios/LAOC II/Pratica III/Tomasulo/UnidadeFuncional.v
 L0 1
 R2
 r1
@@ -142,9 +142,9 @@ R3
 R4
 n@unidade@funcional
 !i10b 1
-!s100 @ifgj`MjI@_6TWgC`NkA]3
+!s100 Z]Z?@AnZQjn_6VWEDQQQ82
 !s85 0
-!s108 1628827938.073000
-!s107 C:/Users/Usuário/Downloads/Tomasulo/Tomasulo/TOMASULO - PRATICA 3/UnidadeFuncional.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Usuário/Downloads/Tomasulo/Tomasulo/TOMASULO - PRATICA 3|C:/Users/Usuário/Downloads/Tomasulo/Tomasulo/TOMASULO - PRATICA 3/UnidadeFuncional.v|
+!s108 1628821637.476000
+!s107 C:/Users/erick/OneDrive/Documentos/GitHub/Repositorios/LAOC II/Pratica III/Tomasulo/UnidadeFuncional.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/erick/OneDrive/Documentos/GitHub/Repositorios/LAOC II/Pratica III/Tomasulo|C:/Users/erick/OneDrive/Documentos/GitHub/Repositorios/LAOC II/Pratica III/Tomasulo/UnidadeFuncional.v|
 !s101 -O0

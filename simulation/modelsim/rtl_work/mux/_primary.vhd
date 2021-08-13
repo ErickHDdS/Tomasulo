@@ -9,7 +9,7 @@ entity mux is
         R5              : in     vl_logic_vector(15 downto 0);
         R6              : in     vl_logic_vector(15 downto 0);
         R7              : in     vl_logic_vector(15 downto 0);
-        Raddr           : in     vl_logic_vector(2 downto 0);
-        Rout            : out    vl_logic_vector(15 downto 0)
+        RegAddr         : in     vl_logic_vector(2 downto 0);
+        RegOut          : out    vl_logic_vector(15 downto 0)
     );
 end mux;

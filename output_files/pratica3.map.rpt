@@ -1,5 +1,5 @@
 Analysis & Synthesis report for pratica3
-Fri Aug 13 01:11:54 2021
+Thu Aug 12 23:26:59 2021
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -14,10 +14,11 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. General Register Statistics
-  9. Port Connectivity Checks: "CDB:cdb|RSadders:RSa1"
- 10. Elapsed Time Per Partition
- 11. Analysis & Synthesis Messages
- 12. Analysis & Synthesis Suppressed Messages
+  9. Port Connectivity Checks: "CDB:cdb|RSadders:modOp"
+ 10. Port Connectivity Checks: "CDB:cdb|mux:CDBmux"
+ 11. Elapsed Time Per Partition
+ 12. Analysis & Synthesis Messages
+ 13. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -43,7 +44,7 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Aug 13 01:11:54 2021           ;
+; Analysis & Synthesis Status        ; Successful - Thu Aug 12 23:26:59 2021           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; pratica3                                        ;
 ; Top-level Entity Name              ; pratica3                                        ;
@@ -151,24 +152,24 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 ; Processors                 ; Number ;
 +----------------------------+--------+
-; Number detected on machine ; 4      ;
+; Number detected on machine ; 16     ;
 ; Maximum allowed            ; 1      ;
 +----------------------------+--------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                       ;
-+----------------------------------+-----------------+------------------------+--------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                                         ; Library ;
-+----------------------------------+-----------------+------------------------+--------------------------------------------------------------------------------------+---------+
-; CDB.v                            ; yes             ; User Verilog HDL File  ; C:/Users/Usuário/Downloads/Tomasulo/Tomasulo/TOMASULO - PRATICA 3/CDB.v              ;         ;
-; FPregisters.v                    ; yes             ; User Verilog HDL File  ; C:/Users/Usuário/Downloads/Tomasulo/Tomasulo/TOMASULO - PRATICA 3/FPregisters.v      ;         ;
-; IQ.v                             ; yes             ; User Verilog HDL File  ; C:/Users/Usuário/Downloads/Tomasulo/Tomasulo/TOMASULO - PRATICA 3/IQ.v               ;         ;
-; RSadders.v                       ; yes             ; User Verilog HDL File  ; C:/Users/Usuário/Downloads/Tomasulo/Tomasulo/TOMASULO - PRATICA 3/RSadders.v         ;         ;
-; UnidadeFuncional.v               ; yes             ; User Verilog HDL File  ; C:/Users/Usuário/Downloads/Tomasulo/Tomasulo/TOMASULO - PRATICA 3/UnidadeFuncional.v ;         ;
-; mux.v                            ; yes             ; User Verilog HDL File  ; C:/Users/Usuário/Downloads/Tomasulo/Tomasulo/TOMASULO - PRATICA 3/mux.v              ;         ;
-; pratica3.v                       ; yes             ; User Verilog HDL File  ; C:/Users/Usuário/Downloads/Tomasulo/Tomasulo/TOMASULO - PRATICA 3/pratica3.v         ;         ;
-+----------------------------------+-----------------+------------------------+--------------------------------------------------------------------------------------+---------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                         ;
++----------------------------------+-----------------+------------------------+--------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                                                           ; Library ;
++----------------------------------+-----------------+------------------------+--------------------------------------------------------------------------------------------------------+---------+
+; CDB.v                            ; yes             ; User Verilog HDL File  ; C:/Users/erick/OneDrive/Documentos/GitHub/Repositorios/LAOC II/Pratica III/Tomasulo/CDB.v              ;         ;
+; FPregisters.v                    ; yes             ; User Verilog HDL File  ; C:/Users/erick/OneDrive/Documentos/GitHub/Repositorios/LAOC II/Pratica III/Tomasulo/FPregisters.v      ;         ;
+; IQ.v                             ; yes             ; User Verilog HDL File  ; C:/Users/erick/OneDrive/Documentos/GitHub/Repositorios/LAOC II/Pratica III/Tomasulo/IQ.v               ;         ;
+; RSadders.v                       ; yes             ; User Verilog HDL File  ; C:/Users/erick/OneDrive/Documentos/GitHub/Repositorios/LAOC II/Pratica III/Tomasulo/RSadders.v         ;         ;
+; UnidadeFuncional.v               ; yes             ; User Verilog HDL File  ; C:/Users/erick/OneDrive/Documentos/GitHub/Repositorios/LAOC II/Pratica III/Tomasulo/UnidadeFuncional.v ;         ;
+; mux.v                            ; yes             ; User Verilog HDL File  ; C:/Users/erick/OneDrive/Documentos/GitHub/Repositorios/LAOC II/Pratica III/Tomasulo/mux.v              ;         ;
+; pratica3.v                       ; yes             ; User Verilog HDL File  ; C:/Users/erick/OneDrive/Documentos/GitHub/Repositorios/LAOC II/Pratica III/Tomasulo/pratica3.v         ;         ;
++----------------------------------+-----------------+------------------------+--------------------------------------------------------------------------------------------------------+---------+
 
 
 +-----------------------------------------------------+
@@ -222,14 +223,24 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 
 
 +----------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "CDB:cdb|RSadders:RSa1"                                                                          ;
+; Port Connectivity Checks: "CDB:cdb|RSadders:modOp"                                                                         ;
 +------------------+--------+----------+-------------------------------------------------------------------------------------+
 ; Port             ; Type   ; Severity ; Details                                                                             ;
 +------------------+--------+----------+-------------------------------------------------------------------------------------+
 ; instOutEnable    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
 ; instOut          ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
 ; doneInst[15..13] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; doneInst[6..4]   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
 +------------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "CDB:cdb|mux:CDBmux"                                                                   ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                             ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; RegOut ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
 
 
 +-------------------------------+
@@ -247,7 +258,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Fri Aug 13 01:11:51 2021
+    Info: Processing started: Thu Aug 12 23:26:58 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off pratica3 -c pratica3
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file cdb.v
@@ -258,10 +269,8 @@ Info (12021): Found 1 design units, including 1 entities, in source file iq.v
     Info (12023): Found entity 1: IQ
 Info (12021): Found 1 design units, including 1 entities, in source file rsadders.v
     Info (12023): Found entity 1: RSadders
-Info (12021): Found 1 design units, including 1 entities, in source file rsload.v
-    Info (12023): Found entity 1: RSload
-Info (12021): Found 1 design units, including 1 entities, in source file rsstore.v
-    Info (12023): Found entity 1: RSstore
+Warning (12019): Can't analyze file -- file RSload.v is missing
+Warning (12019): Can't analyze file -- file RSstore.v is missing
 Info (12021): Found 1 design units, including 1 entities, in source file unidadefuncional.v
     Info (12023): Found entity 1: UnidadeFuncional
 Warning (12090): Entity "mux" obtained from "mux.v" instead of from Quartus II megafunction library
@@ -271,44 +280,43 @@ Info (12021): Found 1 design units, including 1 entities, in source file regn.v
     Info (12023): Found entity 1: regn
 Info (12021): Found 1 design units, including 1 entities, in source file pratica3.v
     Info (12023): Found entity 1: pratica3
-Warning (10236): Verilog HDL Implicit Net warning at CDB.v(24): created implicit net for "instOutEnable"
+Warning (10236): Verilog HDL Implicit Net warning at CDB.v(25): created implicit net for "instOutEnable"
 Info (12127): Elaborating entity "pratica3" for the top level hierarchy
 Info (12128): Elaborating entity "CDB" for hierarchy "CDB:cdb"
-Info (12128): Elaborating entity "IQ" for hierarchy "CDB:cdb|IQ:queue"
+Info (12128): Elaborating entity "IQ" for hierarchy "CDB:cdb|IQ:iq"
 Warning (10230): Verilog HDL assignment warning at IQ.v(31): truncated value with size 32 to match size of target (16)
 Warning (10030): Net "PC1.data_a" at IQ.v(4) has no driver or initial value, using a default initial value '0'
 Warning (10030): Net "PC1.waddr_a" at IQ.v(4) has no driver or initial value, using a default initial value '0'
 Warning (10030): Net "PC1.we_a" at IQ.v(4) has no driver or initial value, using a default initial value '0'
 Info (12128): Elaborating entity "mux" for hierarchy "CDB:cdb|mux:CDBmux"
-Warning (10270): Verilog HDL Case Statement warning at mux.v(8): incomplete case statement has no default case item
-Warning (10240): Verilog HDL Always Construct warning at mux.v(8): inferring latch(es) for variable "Rout", which holds its previous value in one or more paths through the always construct
-Info (10041): Inferred latch for "Rout[0]" at mux.v(8)
-Info (10041): Inferred latch for "Rout[1]" at mux.v(8)
-Info (10041): Inferred latch for "Rout[2]" at mux.v(8)
-Info (10041): Inferred latch for "Rout[3]" at mux.v(8)
-Info (10041): Inferred latch for "Rout[4]" at mux.v(8)
-Info (10041): Inferred latch for "Rout[5]" at mux.v(8)
-Info (10041): Inferred latch for "Rout[6]" at mux.v(8)
-Info (10041): Inferred latch for "Rout[7]" at mux.v(8)
-Info (10041): Inferred latch for "Rout[8]" at mux.v(8)
-Info (10041): Inferred latch for "Rout[9]" at mux.v(8)
-Info (10041): Inferred latch for "Rout[10]" at mux.v(8)
-Info (10041): Inferred latch for "Rout[11]" at mux.v(8)
-Info (10041): Inferred latch for "Rout[12]" at mux.v(8)
-Info (10041): Inferred latch for "Rout[13]" at mux.v(8)
-Info (10041): Inferred latch for "Rout[14]" at mux.v(8)
-Info (10041): Inferred latch for "Rout[15]" at mux.v(8)
-Info (12128): Elaborating entity "RSadders" for hierarchy "CDB:cdb|RSadders:RSa1"
-Warning (10230): Verilog HDL assignment warning at RSadders.v(87): truncated value with size 32 to match size of target (3)
-Warning (10230): Verilog HDL assignment warning at RSadders.v(93): truncated value with size 32 to match size of target (3)
-Warning (10230): Verilog HDL assignment warning at RSadders.v(109): truncated value with size 32 to match size of target (3)
-Warning (10230): Verilog HDL assignment warning at RSadders.v(110): truncated value with size 32 to match size of target (3)
+Warning (10270): Verilog HDL Case Statement warning at mux.v(9): incomplete case statement has no default case item
+Warning (10240): Verilog HDL Always Construct warning at mux.v(9): inferring latch(es) for variable "RegOut", which holds its previous value in one or more paths through the always construct
+Info (10041): Inferred latch for "RegOut[0]" at mux.v(9)
+Info (10041): Inferred latch for "RegOut[1]" at mux.v(9)
+Info (10041): Inferred latch for "RegOut[2]" at mux.v(9)
+Info (10041): Inferred latch for "RegOut[3]" at mux.v(9)
+Info (10041): Inferred latch for "RegOut[4]" at mux.v(9)
+Info (10041): Inferred latch for "RegOut[5]" at mux.v(9)
+Info (10041): Inferred latch for "RegOut[6]" at mux.v(9)
+Info (10041): Inferred latch for "RegOut[7]" at mux.v(9)
+Info (10041): Inferred latch for "RegOut[8]" at mux.v(9)
+Info (10041): Inferred latch for "RegOut[9]" at mux.v(9)
+Info (10041): Inferred latch for "RegOut[10]" at mux.v(9)
+Info (10041): Inferred latch for "RegOut[11]" at mux.v(9)
+Info (10041): Inferred latch for "RegOut[12]" at mux.v(9)
+Info (10041): Inferred latch for "RegOut[13]" at mux.v(9)
+Info (10041): Inferred latch for "RegOut[14]" at mux.v(9)
+Info (10041): Inferred latch for "RegOut[15]" at mux.v(9)
+Info (12128): Elaborating entity "RSadders" for hierarchy "CDB:cdb|RSadders:modOp"
+Warning (10230): Verilog HDL assignment warning at RSadders.v(86): truncated value with size 32 to match size of target (3)
+Warning (10230): Verilog HDL assignment warning at RSadders.v(103): truncated value with size 32 to match size of target (3)
+Warning (10230): Verilog HDL assignment warning at RSadders.v(104): truncated value with size 32 to match size of target (3)
 Warning (10030): Net "Qj[0]" at RSadders.v(10) has no driver or initial value, using a default initial value '0'
 Warning (10030): Net "Qk[0]" at RSadders.v(11) has no driver or initial value, using a default initial value '0'
 Warning (10030): Net "OP[0]" at RSadders.v(12) has no driver or initial value, using a default initial value '0'
-Info (12128): Elaborating entity "UnidadeFuncional" for hierarchy "CDB:cdb|RSadders:RSa1|UnidadeFuncional:UF"
+Info (12128): Elaborating entity "UnidadeFuncional" for hierarchy "CDB:cdb|RSadders:modOp|UnidadeFuncional:UF"
 Info (12128): Elaborating entity "FPregisters" for hierarchy "CDB:cdb|FPregisters:fpreg"
-Info (144001): Generated suppressed messages file C:/Users/Usuário/Downloads/Tomasulo/Tomasulo/TOMASULO - PRATICA 3/output_files/pratica3.map.smsg
+Info (144001): Generated suppressed messages file C:/Users/erick/OneDrive/Documentos/GitHub/Repositorios/LAOC II/Pratica III/Tomasulo/output_files/pratica3.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Warning (21074): Design contains 1 input pin(s) that do not drive logic
@@ -316,16 +324,16 @@ Warning (21074): Design contains 1 input pin(s) that do not drive logic
 Info (21057): Implemented 1 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 1 input pins
     Info (21059): Implemented 0 output pins
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 18 warnings
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 19 warnings
     Info: Peak virtual memory: 4594 megabytes
-    Info: Processing ended: Fri Aug 13 01:11:54 2021
-    Info: Elapsed time: 00:00:03
-    Info: Total CPU time (on all processors): 00:00:03
+    Info: Processing ended: Thu Aug 12 23:26:59 2021
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
 
 
 +------------------------------------------+
 ; Analysis & Synthesis Suppressed Messages ;
 +------------------------------------------+
-The suppressed messages can be found in C:/Users/Usuário/Downloads/Tomasulo/Tomasulo/TOMASULO - PRATICA 3/output_files/pratica3.map.smsg.
+The suppressed messages can be found in C:/Users/erick/OneDrive/Documentos/GitHub/Repositorios/LAOC II/Pratica III/Tomasulo/output_files/pratica3.map.smsg.
 
 

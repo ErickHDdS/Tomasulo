@@ -1,5 +1,5 @@
 Flow report for pratica3
-Fri Aug 13 01:11:54 2021
+Thu Aug 12 23:26:59 2021
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -40,7 +40,7 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Flow Summary                                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Flow Status                        ; Successful - Fri Aug 13 01:11:54 2021           ;
+; Flow Status                        ; Successful - Thu Aug 12 23:26:59 2021           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; pratica3                                        ;
 ; Top-level Entity Name              ; pratica3                                        ;
@@ -64,27 +64,27 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 08/13/2021 01:11:52 ;
+; Start date & time ; 08/12/2021 23:26:58 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; pratica3            ;
 +-------------------+---------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                                                                     ;
-+-------------------------------------+---------------------------------+---------------+-------------+----------------+
-; Assignment Name                     ; Value                           ; Default Value ; Entity Name ; Section Id     ;
-+-------------------------------------+---------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 154880089643432.162882791213912 ; --            ; --          ; --             ;
-; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                     ; --            ; --          ; eda_simulation ;
-; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog)       ; <None>        ; --          ; --             ;
-; MAX_CORE_JUNCTION_TEMP              ; 85                              ; --            ; --          ; --             ;
-; MIN_CORE_JUNCTION_TEMP              ; 0                               ; --            ; --          ; --             ;
-; PARTITION_COLOR                     ; 16764057                        ; --            ; --          ; Top            ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING           ; --            ; --          ; Top            ;
-; PARTITION_NETLIST_TYPE              ; SOURCE                          ; --            ; --          ; Top            ;
-; PROJECT_OUTPUT_DIRECTORY            ; output_files                    ; --            ; --          ; --             ;
-+-------------------------------------+---------------------------------+---------------+-------------+----------------+
++---------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                    ;
++-------------------------------------+--------------------------------+---------------+-------------+----------------+
+; Assignment Name                     ; Value                          ; Default Value ; Entity Name ; Section Id     ;
++-------------------------------------+--------------------------------+---------------+-------------+----------------+
+; COMPILER_SIGNATURE_ID               ; 49410866753504.162882161802900 ; --            ; --          ; --             ;
+; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                    ; --            ; --          ; eda_simulation ;
+; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog)      ; <None>        ; --          ; --             ;
+; MAX_CORE_JUNCTION_TEMP              ; 85                             ; --            ; --          ; --             ;
+; MIN_CORE_JUNCTION_TEMP              ; 0                              ; --            ; --          ; --             ;
+; PARTITION_COLOR                     ; 16764057                       ; --            ; --          ; Top            ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING          ; --            ; --          ; Top            ;
+; PARTITION_NETLIST_TYPE              ; SOURCE                         ; --            ; --          ; Top            ;
+; PROJECT_OUTPUT_DIRECTORY            ; output_files                   ; --            ; --          ; --             ;
++-------------------------------------+--------------------------------+---------------+-------------+----------------+
 
 
 +--------------------------------------------------------------------------------------------------------------------------+
@@ -92,8 +92,8 @@ applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:03     ; 1.0                     ; 4583 MB             ; 00:00:02                           ;
-; Total                ; 00:00:03     ; --                      ; --                  ; 00:00:02                           ;
+; Analysis & Synthesis ; 00:00:01     ; 1.0                     ; 4584 MB             ; 00:00:01                           ;
+; Total                ; 00:00:01     ; --                      ; --                  ; 00:00:01                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -102,7 +102,7 @@ applicable agreement for further details.
 +----------------------+------------------+-----------+------------+----------------+
 ; Module Name          ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
 +----------------------+------------------+-----------+------------+----------------+
-; Analysis & Synthesis ; DESKTOP-A0MNRKP  ; Windows 7 ; 6.2        ; x86_64         ;
+; Analysis & Synthesis ; DESKTOP-J65UKP5  ; Windows 7 ; 6.2        ; x86_64         ;
 +----------------------+------------------+-----------+------------+----------------+
 
 
