@@ -1,4 +1,4 @@
-# Pratica II LAOC-II - Algoritmo de Tomasulo
+# Pratica III LAOC-II - Algoritmo de Tomasulo
 Prática III implementada na disciplina de Laboratório de Arquitetura e Organização de Computadores II do curso de Engenharia de Computação - CEFET/MG
 
 Check List
@@ -24,7 +24,7 @@ Código teste:
 
 Programa Principal
 -----
-[000]offset [000]Rz [000]Rx [000]Ry [0000] opcode
+[000]offset [000]Rz [000]Rx [000]Ry [0000] opcode <br />
 Instrucao[0]=16'b0000110010100000; //ADD R3, R1, R2 <br />
 Instrucao[1]=16'b0001010110010001; //SUB R5, R3, R1 <br />
 Instrucao[2]=16'b0001011001100000; //ADD R5, R4, R6 <br />
